@@ -107,11 +107,20 @@
 /* =====================
    NAVBAR
 ===================== */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+    .hero p {
+        font-size: 16px;
+    }
+}
 
 .navbar{
   display:flex;
   justify-content:space-between;
   align-items:center;
+  flex-wrap: wrap;
   height:80px;              
   padding:0 40px;
   background:#fff;
@@ -1969,4 +1978,5 @@ button i{
   font-size: 18px;
   text-align: center;
 }
+
 
