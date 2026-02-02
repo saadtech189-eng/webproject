@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="product-details">
+  <img id="productImage">
+  <div class="product-info">
+    <h2 id="productName"></h2>
+    <p id="productDesc"></p>
+    <h3 id="productPrice"></h3>
+  </div>
+</div>
+
+<script>
+const products = {
+  bp: {
+    name: "Digital BP Machine",
+    image: "img/bp.jpg",
+    desc: "Accurate blood pressure monitor for hospitals and home use.",
+    price: "৳ 2,500"
+  },
+  ecg: {
+    name: "ECG Machine",
+    image: "img/ECG.png",
+    desc: "Advanced electrocardiograph for heart diagnosis.",
+    price: "৳ 85,000"
+  },
+  oxygen: {
+    name: "Oxygen Concentrator",
+    image: "img/oxygen concentrator.jpg",
+    desc: "Reliable oxygen supply for ICU and home care.",
+    price: "৳ 65,000"
+  },
+  nebulizer: {
+    name: "Nebulizer Machine",
+    image: "img/nebulizer.jpg",
+    desc: "Fast mist inhalation therapy device.",
+    price: "৳ 1,800"
+  }
+};
+
+const urlParams = new URLSearchParams(window.location.search);
+const productKey = urlParams.get("product");
+
+const product = products[productKey];
+
+document.getElementById("productImage").src = product.image;
+document.getElementById("productName").innerText = product.name;
+document.getElementById("productDesc").innerText = product.desc;
+document.getElementById("productPrice").innerText = "Price: " + product.price;
+</script>
+
+</body>
+</html>
