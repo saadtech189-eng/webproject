@@ -7,122 +7,7 @@
   <title>Healix Prime | Home</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <style>
-    .whatsapp-float {
-      animation: pulse-animation 2s infinite;
-    }
-
-    @keyframes pulse-animation {
-      0% {
-        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
-      }
-
-      70% {
-        box-shadow: 0 0 0 20px rgba(37, 211, 102, 0);
-      }
-
-      100% {
-        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
-      }
-    }
-
-    .slide.active {
-      display: block !important;
-    }
-
-    .slide {
-      display: none;
-    }
-
-    .dot.active {
-      @apply bg-white;
-    }
-
-
-    .btn-custom-hover {
-      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-      /* Sundor transition-er jonno */
-      display: inline-block;
-    }
-
-    .btn-custom-hover:hover {
-      background-color: #ff7a18 !important;
-      /* Apnar dewa color */
-      transform: translateY(-5px);
-      /* Ektu upore uthbe (Translation) */
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-      /* Ektu shadow effect */
-    }
-
-    .partner-card {
-      border: 1px solid transparent;
-    }
-
-    .partner-card:hover {
-      border-color: #ff7a18;
-      /* Apnar favorite orange color ta hover-e trigger hobe */
-      color: #ff7a18;
-      transform: scale(1.05);
-      /* Ektu boro hobe hover korle */
-    }
-    
-  /* Button Animation & Design */
-  .btn-read-more {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding: 14px 35px;
-    background-color: #ff7a18; /* Apnar favorite color */
-    color: white;
-    font-weight: 700;
-    border-radius: 50px;
-    overflow: hidden;
-    transition: all 0.4s ease;
-    z-index: 1;
-    box-shadow: 0 10px 20px rgba(255, 122, 24, 0.2);
-  }
-
-  .btn-read-more::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-    transition: all 0.6s ease;
-    z-index: -1;
-  }
-
-  .btn-read-more:hover {
-    background-color: #2563eb; /* Blue colour transform */
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 15px 30px rgba(37, 99, 235, 0.3);
-  }
-
-  .btn-read-more:hover::before {
-    left: 100%;
-  }
-
-  .btn-read-more:hover svg {
-    transform: translateX(5px);
-  }
-
-  .btn-read-more svg {
-    transition: transform 0.3s ease;
-  }
-
-  /* Image Animation */
-  @keyframes bounce-slow {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-  }
-  .animate-bounce-slow {
-    animation: bounce-slow 4s infinite ease-in-out;
-  }
-
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="font-serif">
@@ -146,38 +31,69 @@
       </span>
     </div>
   </div>
-
   <!-- ===== NAVBAR ===== -->
-  <nav class="bg-white shadow-md sticky top-0 z-50 py-4 px-4 md:px-10">
-    <div class="flex justify-between items-center flex-wrap gap-4">
-      <!-- Logo -->
-      <div class="w-32 md:w-40">
-        <img src="img/Healix-Prime-Logo_Print-removebg-preview.png" alt="Healix Prime" class="w-full">
-      </div>
+  <nav class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50 py-3 px-4 md:px-10 border-b border-gray-100">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
 
-      <!-- Hamburger Menu (Mobile) -->
-      <button id="menu-toggle" class="md:hidden text-gray-700 text-2xl">
-        <i class="fas fa-bars"></i>
-      </button>
-
-      <!-- Menu -->
-      <ul id="menu"
-        class="hidden md:flex flex-col md:flex-row gap-4 md:gap-6 w-full md:w-auto absolute md:static top-full left-0 right-0 bg-white md:bg-transparent p-4 md:p-0 text-center md:text-left">
-        <li><a href="index.html" class="text-gray-700 hover:text-orange-600 transition">Home</a></li>
-        <li><a href="about.html" class="text-gray-700 hover:text-orange-600 transition">About Us</a></li>
-        <li><a href="product.html" class="text-gray-700 hover:text-orange-600 transition">Product by Category</a></li>
-        <li><a href="category.html" class="text-gray-700 hover:text-orange-600 transition">Products</a></li>
-        <li><a href="contact.html" class="text-gray-700 hover:text-orange-600 transition">Contact</a></li>
-      </ul>
-
-      <!-- WhatsApp -->
-      <div class="hidden md:block">
-        <a href="https://wa.me/8801784847377" target="_blank"
-          class="flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition">
-          <i class="fab fa-whatsapp"></i>
-          <!-- <span class="hidden lg:inline">+8801784847377</span> -->
+      <div class="flex-shrink-0">
+        <a href="index.html">
+          <img src="img/Healix-Prime-Logo_Print-removebg-preview.png" alt="Healix Prime"
+            class="h-10 md:h-14 w-auto object-contain">
         </a>
       </div>
+
+      <ul class="hidden md:flex items-center gap-8">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <!-- <li><a href="about.html" class="nav-link">About Us</a></li> -->
+        <li class="relative group">
+          <a href="about.html" class="nav-link flex items-center gap-1">
+            About Us
+            <i class="fas fa-chevron-down text-[10px] transition-transform group-hover:rotate-180"></i>
+          </a>
+
+          <div
+            class="absolute top-full left-0 w-52 bg-white shadow-2xl rounded-2xl border border-gray-50 py-3 px-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-4 group-hover:translate-y-1 z-50">
+            <a href="our-team.html"
+              class="flex items-center gap-3 px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#ff7a18] rounded-xl transition-all duration-200">
+
+              <span>Our Team</span>
+            </a>
+
+
+
+          </div>
+        </li>
+        <li class="relative group">
+          <a href="category.html" class="nav-link flex items-center gap-1">
+            Products <i class="fas fa-chevron-down text-[10px]"></i>
+          </a>
+          <div
+            class="absolute top-full left-0 w-48 bg-white shadow-xl rounded-xl border border-gray-50 p-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0">
+            <a href="#"
+              class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text--[#ff7a18] rounded-lg">Radiology</a>
+            <a href="#"
+              class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text--[#ff7a18] rounded-lg">Orthology</a>
+          </div>
+        </li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="hidden md:flex items-center gap-6">
+        <button class="text-gray-500 hover:text-[#ff7a18] transition">
+          <i class="fas fa-search text-lg"></i>
+        </button>
+
+        <a href="contact.html"
+          class="bg-[#ff7a18] text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-blue-600 hover:shadow-lg hover:shadow-blue-200 transition-all duration-300 transform hover:-translate-y-0.5">
+          Get a Quote
+        </a>
+      </div>
+
+      <button id="menu-toggle" class="md:hidden text-gray-800 p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
     </div>
   </nav>
 
@@ -301,67 +217,72 @@
   </section>
 
   <!-- ===== ABOUT SECTION ===== -->
-<section class="py-16 md:py-24 px-4 bg-white relative overflow-hidden">
-  <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-96 h-96 bg-orange-50 rounded-full blur-3xl opacity-50"></div>
+  <section class="py-16 md:py-24 px-4 bg-white relative overflow-hidden">
+    <div
+      class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-96 h-96 bg-orange-50 rounded-full blur-3xl opacity-50">
+    </div>
 
-  <div class="max-w-6xl mx-auto relative z-10">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-      
-      <div class="order-2 md:order-1 relative group">
-        <div class="absolute -top-6 -left-6 bg-white shadow-xl rounded-2xl p-6 z-20 hidden md:block animate-bounce-slow">
+    <div class="max-w-6xl mx-auto relative z-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+        <div class="order-2 md:order-1 relative group">
+          <div
+            class="absolute -top-6 -left-6 bg-white shadow-xl rounded-2xl p-6 z-20 hidden md:block animate-bounce-slow">
             <span class="block text-3xl font-bold text-orange-600">10+</span>
             <span class="text-sm text-gray-500 font-semibold uppercase tracking-wider">Years Experience</span>
+          </div>
+
+          <div class="relative overflow-hidden rounded-2xl shadow-2xl">
+            <img src="img/about.jpg" alt="About Healix Prime"
+              class="w-full transform group-hover:scale-105 transition duration-700">
+          </div>
+
+          <div class="absolute -bottom-6 -right-6 w-24 h-24 bg-blue-600 opacity-10 rounded-full"></div>
         </div>
-        
-        <div class="relative overflow-hidden rounded-2xl shadow-2xl">
-          <img src="img/about.jpg" alt="About Healix Prime" class="w-full transform group-hover:scale-105 transition duration-700">
+
+        <div class="order-1 md:order-2">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-100 text-orange-600 text-sm font-bold mb-4">
+            <span class="w-2 h-2 bg-orange-600 rounded-full animate-pulse"></span>
+            WHO WE ARE
+          </div>
+
+          <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-2 leading-tight">
+            Healix <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-orange-400">Prime</span>
+          </h2>
+
+          <div class="w-16 h-1.5 bg-blue-600 rounded-full mb-8"></div>
+
+          <p class="text-gray-600 text-lg leading-relaxed mb-6 italic border-l-4 border-orange-600 pl-4">
+            Empowering Bangladesh's healthcare with precision and global standards.
+          </p>
+
+          <p class="text-gray-600 leading-relaxed mb-8">
+            Healix Prime is a trusted supplier of advanced medical equipment, delivering high-quality healthcare
+            solutions. Each solution is carefully selected to ensure precision, performance, and long-term value.
+          </p>
+
+          <a href="about.html" class="btn-read-more">
+            <span>Read More</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
         </div>
-        
-        <div class="absolute -bottom-6 -right-6 w-24 h-24 bg-blue-600 opacity-10 rounded-full"></div>
-      </div>
-
-      <div class="order-1 md:order-2">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-100 text-orange-600 text-sm font-bold mb-4">
-          <span class="w-2 h-2 bg-orange-600 rounded-full animate-pulse"></span>
-          WHO WE ARE
-        </div>
-        
-        <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-2 leading-tight">
-          Healix <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-orange-400">Prime</span>
-        </h2>
-        
-        <div class="w-16 h-1.5 bg-blue-600 rounded-full mb-8"></div>
-
-        <p class="text-gray-600 text-lg leading-relaxed mb-6 italic border-l-4 border-orange-600 pl-4">
-          Empowering Bangladesh's healthcare with precision and global standards.
-        </p>
-
-        <p class="text-gray-600 leading-relaxed mb-8">
-          Healix Prime is a trusted supplier of advanced medical equipment, delivering high-quality healthcare 
-          solutions. Each solution is carefully selected to ensure precision, performance, and long-term value.
-        </p>
-
-        <a href="about.html" class="btn-read-more">
-          <span>Read More</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-          </svg>
-        </a>
       </div>
     </div>
-  </div>
-</section>
-
-
+  </section>
 
   <!-- ===== PRODUCT CATEGORY SECTION ===== -->
-  <section class="py-16 md:py-24 px-4 bg-blue-50">
+  <!-- <section class="py-16 md:py-24 px-4 bg-blue-50">
     <div class="max-w-6xl mx-auto text-center">
       <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">Product by Category</h2>
       <p class="text-gray-600 mb-12">Advanced medical categories launching soon</p>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-        <!-- Card 1 -->
         <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl hover:-translate-y-2 transition cursor-pointer">
           <div class="text-5xl mb-4">🩻</div>
           <h3 class="text-xl font-bold text-orange-500 mb-4">Radiogram</h3>
@@ -371,7 +292,6 @@
           </a>
         </div>
 
-        <!-- Card 2 -->
         <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl hover:-translate-y-2 transition cursor-pointer">
           <div class="text-5xl mb-4">🫀</div>
           <h3 class="text-xl font-bold text-orange-500 mb-4">Orthology</h3>
@@ -381,7 +301,6 @@
           </a>
         </div>
 
-        <!-- Card 3 -->
         <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl hover:-translate-y-2 transition cursor-pointer">
           <div class="text-5xl mb-4">🧠</div>
           <h3 class="text-xl font-bold text-orange-500 mb-4">Neurology</h3>
@@ -392,182 +311,591 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
+  <section class="py-16 md:py-24 px-4 bg-[#f1f5f9] relative">
+    <div class="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-white to-transparent"></div>
 
-  <!-- ===== OUR PRODUCTS SECTION ===== -->
-  <section class="py-16 md:py-24 px-4">
-    <div class="max-w-6xl mx-auto">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">Our Products</h2>
-        <p class="text-gray-600">Advanced medical categories launching soon</p>
+    <div class="max-w-7xl mx-auto relative z-10">
+      <div class="text-center mb-16">
+        <span class="text-blue-600 font-bold tracking-[0.2em] text-xs uppercase">Specialized Solutions</span>
+        <h2 class="text-3xl md:text-5xl font-black text-gray-900 mt-3 mb-4">Browse by <span
+            class="text-[#ff7a18]">Category</span></h2>
+        <div class="w-20 h-1.5 bg-blue-600 mx-auto rounded-full"></div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-        <!-- Product 1 -->
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl hover:-translate-y-1 transition">
-          <img src="img/bp.jpg" alt="BP Machine" class="w-full h-48 object-cover">
-          <div class="p-4">
-            <h3 class="font-bold text-lg text-gray-800 mb-2">BP Machine</h3>
-            <p class="text-gray-600 text-sm">High-quality blood pressure monitor.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+
+        <div
+          class="category-card group bg-white rounded-3xl p-10 shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-500 text-center relative overflow-hidden">
+          <div
+            class="absolute -right-4 -top-4 w-24 h-24 bg-orange-50 rounded-full group-hover:scale-[3] transition-transform duration-700 opacity-50">
+          </div>
+
+          <div class="relative z-10">
+            <div
+              class="w-20 h-20 bg-orange-100 text-[#ff7a18] rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-[#ff7a18] group-hover:text-white transition-all duration-500 rotate-3 group-hover:rotate-0 shadow-inner">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z" />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-black text-orange-600 mb-4 tracking-tight">Radiology</h3>
+            <p class="text-gray-500 text-sm mb-8 leading-relaxed">Advanced X-Ray, CT, and MRI imaging systems for
+              accurate clinical diagnostics.</p>
+            <a href="product.html" class="cat-link">
+              See Catalogue
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
           </div>
         </div>
 
-        <!-- Product 2 -->
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl hover:-translate-y-1 transition">
-          <img src="img/ECG.png" alt="ECG Machine" class="w-full h-48 object-cover">
-          <div class="p-4">
-            <h3 class="font-bold text-lg text-gray-800 mb-2">ECG Machine</h3>
-            <p class="text-gray-600 text-sm">Advanced heart diagnosis machine.</p>
+        <div
+          class="category-card group bg-white rounded-3xl p-10 shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-500 text-center relative overflow-hidden">
+          <div
+            class="absolute -right-4 -top-4 w-24 h-24 bg-blue-50 rounded-full group-hover:scale-[3] transition-transform duration-700 opacity-50">
+          </div>
+          <div class="relative z-10">
+            <div
+              class="w-20 h-20 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all duration-500 -rotate-3 group-hover:rotate-0 shadow-inner">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-black text-orange-600 mb-4 tracking-tight">Orthology</h3>
+            <p class="text-gray-500 text-sm mb-8 leading-relaxed">High-precision orthopedic instruments and bone surgery
+              equipment solutions.</p>
+            <a href="product.html" class="cat-link">
+              See Catalogue
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
           </div>
         </div>
 
-        <!-- Product 3 -->
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl hover:-translate-y-1 transition">
-          <img src="img/oxygen concentrator.jpg" alt="Oxygen Concentrator" class="w-full h-48 object-cover">
-          <div class="p-4">
-            <h3 class="font-bold text-lg text-gray-800 mb-2">Oxygen Concentrator</h3>
-            <p class="text-gray-600 text-sm">Medical oxygen supply device.</p>
+        <div
+          class="category-card group bg-white rounded-3xl p-10 shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-500 text-center relative overflow-hidden">
+          <div
+            class="absolute -right-4 -top-4 w-24 h-24 bg-orange-50 rounded-full group-hover:scale-[3] transition-transform duration-700 opacity-50">
+          </div>
+          <div class="relative z-10">
+            <div
+              class="w-20 h-20 bg-orange-100 text-[#ff7a18] rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-[#ff7a18] group-hover:text-white transition-all duration-500 rotate-3 group-hover:rotate-0 shadow-inner">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-black text-orange-600 mb-4 tracking-tight">Neurology</h3>
+            <p class="text-gray-500 text-sm mb-8 leading-relaxed">Specialized neurological monitoring devices and
+              neurosurgery tools.</p>
+            <a href="product.html" class="cat-link">
+              See Catalogue
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
           </div>
         </div>
 
-        <!-- Product 4 -->
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl hover:-translate-y-1 transition">
-          <img src="img/nebulizer.jpg" alt="Nebulizer" class="w-full h-48 object-cover">
-          <div class="p-4">
-            <h3 class="font-bold text-lg text-gray-800 mb-2">Flow & Level Measurement</h3>
-            <p class="text-gray-600 text-sm">Respiratory treatment device.</p>
+      </div>
+    </div>
+  </section>
+
+  <style>
+
+  </style>
+
+  <!-- ===== OUR PRODUCTS SECTION ===== -->
+  <section class="py-16 md:py-24 px-4 bg-gray-50/50">
+    <div class="max-w-7xl mx-auto">
+
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div>
+          <span class="text-orange-600 font-bold tracking-widest text-sm uppercase">Medical Grade</span>
+          <h2 class="text-3xl md:text-5xl font-black text-gray-900 mt-2">Premium <span
+              class="text-orange-600">Equipments</span></h2>
+        </div>
+        <p class="text-gray-500 max-w-md md:text-right">
+          Delivering precision-engineered medical technology to healthcare institutions worldwide.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+
+        <div
+          class="group relative bg-white rounded-2xl p-4 shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100">
+          <div class="absolute top-6 left-6 z-10">
+            <span
+              class="bg-orange-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter">New
+              Arrival</span>
+          </div>
+
+          <div class="relative overflow-hidden rounded-xl bg-gray-100 h-56 mb-6">
+            <img src="img/bp.jpg" alt="BP Machine"
+              class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+            <div
+              class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <button
+                class="bg-white text-gray-900 p-3 rounded-full shadow-lg hover:bg-[#ff7a18] hover:text-white transition transform translate-y-4 group-hover:translate-y-0 duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="space-y-2 px-2 pb-2">
+            <h3 class="font-bold text-xl text-gray-800 group-hover:text-orange-600 transition-colors">BP Machine</h3>
+            <p class="text-gray-500 text-sm leading-snug">Precision blood pressure monitoring with clinical accuracy.
+            </p>
+            <div class="pt-4 border-t border-gray-50 flex justify-between items-center">
+              <span class="text-xs font-bold text-gray-400">ID: HP-8820</span>
+              <a href="#" class="text-[#ff7a18] font-bold text-sm flex items-center gap-1 hover:underline">
+                Details <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
+
+        <div
+          class="group relative bg-white rounded-2xl p-4 shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100">
+          <div class="relative overflow-hidden rounded-xl bg-gray-100 h-56 mb-6">
+            <img src="img/ECG.png" alt="ECG"
+              class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+            <div
+              class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <button
+                class="bg-white text-gray-900 p-3 rounded-full shadow-lg hover:bg-[#ff7a18] hover:text-white transition transform translate-y-4 group-hover:translate-y-0 duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="space-y-2 px-2 pb-2">
+            <h3 class="font-bold text-xl text-gray-800 group-hover:text-orange-600 transition-colors">ECG Machine</h3>
+            <p class="text-gray-500 text-sm leading-snug">Multi-channel advanced cardiac analysis system.</p>
+            <div class="pt-4 border-t border-gray-50 flex justify-between items-center">
+              <span class="text-xs font-bold text-gray-400">ID: HP-ECG01</span>
+              <a href="#" class="text-[#ff7a18] font-bold text-sm flex items-center gap-1">Details...</a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="group relative bg-white rounded-2xl p-4 shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100">
+          <div class="absolute top-6 left-6 z-10">
+            <span
+              class="bg-orange-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter">New
+              Arrival</span>
+          </div>
+
+          <div class="relative overflow-hidden rounded-xl bg-gray-100 h-56 mb-6">
+            <img src="img/oxygen concentrator.jpg" alt="Oxygen Concentrator"
+              class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+            <div
+              class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <button
+                class="bg-white text-gray-900 p-3 rounded-full shadow-lg hover:bg-[#ff7a18] hover:text-white transition transform translate-y-4 group-hover:translate-y-0 duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="space-y-2 px-2 pb-2">
+            <h3 class="font-bold text-xl text-gray-800 group-hover:text-orange-600 transition-colors">Oxygen
+              Concentrator</h3>
+            <p class="text-gray-500 text-sm leading-snug">Medical oxygen supply device.</p>
+            <div class="pt-4 border-t border-gray-50 flex justify-between items-center">
+              <span class="text-xs font-bold text-gray-400">ID: HP-8820</span>
+              <a href="#" class="text-[#ff7a18] font-bold text-sm flex items-center gap-1 hover:underline">
+                Details <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="group relative bg-white rounded-2xl p-4 shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100">
+          <div class="relative overflow-hidden rounded-xl bg-gray-100 h-56 mb-6">
+            <img src="img/ECG.png" alt="ECG"
+              class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+            <div
+              class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <button
+                class="bg-white text-gray-900 p-3 rounded-full shadow-lg hover:bg-[#ff7a18] hover:text-white transition transform translate-y-4 group-hover:translate-y-0 duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="space-y-2 px-2 pb-2">
+            <h3 class="font-bold text-xl text-gray-800 group-hover:text-orange-600 transition-colors">Flow & Level
+              Measurement</h3>
+            <p class="text-gray-500 text-sm leading-snug">Respiratory treatment device.</p>
+            <div class="pt-4 border-t border-gray-50 flex justify-between items-center">
+              <span class="text-xs font-bold text-gray-400">ID: HP-ECG01</span>
+              <a href="#" class="text-[#ff7a18] font-bold text-sm flex items-center gap-1">Details...</a>
+            </div>
+          </div>
+        </div>
+
       </div>
 
       <div class="text-center">
-        <a href="category.html"
-          class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition">+ Explore
-          All</a>
+        <a href="category.html" class="smart-btn">
+          <span>View Full Catalog</span>
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
+            </svg>
+          </div>
+        </a>
       </div>
     </div>
   </section>
 
   <!-- ===== WHY CHOOSE US ===== -->
-  <section class="py-16 md:py-24 px-4 bg-gradient-to-r from-blue-50 to-blue-100">
-    <div class="max-w-6xl mx-auto text-center">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">Why Choose Us</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition">
-          <div class="text-3xl text-green-500 mb-2">✓</div>
-          <p class="font-semibold text-gray-700">Certified Products</p>
+
+  <section class="py-16 md:py-24 px-4 bg-[#f8fafc] relative overflow-hidden">
+    <div class="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none">
+      <svg width="100%" height="100%">
+        <pattern id="pattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1" fill="#2563eb" />
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#pattern)" />
+      </svg>
+    </div>
+
+    <div class="max-w-7xl mx-auto relative z-10">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-5xl font-black text-gray-900 mb-4">Why Healthcare Experts <span
+            class="text-orange-600">Trust Us</span></h2>
+        <div class="w-24 h-1.5 bg-[#ff7a18] mx-auto rounded-full"></div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div
+          class="why-card group bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:border-[#ff7a18] transition-all duration-300 flex flex-col items-center text-center">
+          <div
+            class="w-14 h-14 bg-blue-50 text-orange-600 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#ff7a18] group-hover:text-white transition-all duration-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-3">Certified Products</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">ISO & CE certified medical equipment ensuring international
+            safety standards.</p>
         </div>
-        <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition">
-          <div class="text-3xl text-green-500 mb-2">✓</div>
-          <p class="font-semibold text-gray-700">Fast Delivery</p>
+
+        <div
+          class="why-card group bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:border-[#ff7a18] transition-all duration-300 flex flex-col items-center text-center">
+          <div
+            class="w-14 h-14 bg-blue-50 text-orange-600 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#ff7a18] group-hover:text-white transition-all duration-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-3">Fast Delivery</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Swift and secure shipping across Bangladesh to keep your
+            facility running.</p>
         </div>
-        <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition">
-          <div class="text-3xl text-green-500 mb-2">✓</div>
-          <p class="font-semibold text-gray-700">24/7 Support</p>
+
+        <div
+          class="why-card group bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:border-[#ff7a18] transition-all duration-300 flex flex-col items-center text-center">
+          <div
+            class="w-14 h-14 bg-blue-50 text-orange-600 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#ff7a18] group-hover:text-white transition-all duration-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-3">24/7 Support</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Dedicated technical team available round the clock for your
+            assistance.</p>
         </div>
-        <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition">
-          <div class="text-3xl text-green-500 mb-2">✓</div>
-          <p class="font-semibold text-gray-700">Best Price</p>
+
+        <div
+          class="why-card group bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:border-[#ff7a18] transition-all duration-300 flex flex-col items-center text-center">
+          <div
+            class="w-14 h-14 bg-blue-50 text-orange-600 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#ff7a18] group-hover:text-white transition-all duration-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-3">Best Price</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Premium quality equipment at the most competitive market
+            rates.</p>
         </div>
+
       </div>
     </div>
   </section>
 
+
   <!-- ===== TESTIMONIALS ===== -->
-  <section class="py-16 md:py-24 px-4">
-    <div class="max-w-6xl mx-auto text-center">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">What Our Clients Say</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="bg-gray-50 rounded-lg p-8 shadow-md">
-          <p class="text-gray-600 mb-4 italic">"Excellent service and reliable medical equipment. Highly recommended!"
+
+  <section class="py-16 md:py-24 px-4 bg-white">
+    <div class="max-w-6xl mx-auto">
+
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-5xl font-black text-gray-900 mb-4">Trusted by <span class="text-blue-600">Medical
+            Professionals</span></h2>
+        <div class="w-24 h-1.5 bg-[#ff7a18] mx-auto rounded-full"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+        <div
+          class="relative bg-gray-50 p-8 md:p-10 rounded-3xl border border-gray-100 hover:shadow-xl transition-all duration-300 group">
+          <div
+            class="absolute -top-5 left-10 w-10 h-10 bg-[#ff7a18] text-white rounded-full flex items-center justify-center shadow-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C15.4647 8 15.017 8.44772 15.017 9V12C15.017 12.5523 14.5693 13 14.017 13H12.017V21H14.017ZM5.017 21L5.017 18C5.017 16.8954 5.91243 16 7.017 16H10.017C10.5693 16 11.017 15.5523 11.017 15V9C11.017 8.44772 10.5693 8 10.017 8H7.017C6.46472 8 6.017 8.44772 6.017 9V12C6.017 12.5523 5.56929 13 5.017 13H3.017V21H5.017Z" />
+            </svg>
+          </div>
+
+          <div class="mb-6 flex gap-1">
+            <span class="text-yellow-400">★★★★★</span>
+          </div>
+
+          <p class="text-gray-700 text-lg leading-relaxed mb-8 italic">
+            "Excellent service and reliable medical equipment. Their technical team is highly skilled and helped us set
+            up our OT department flawlessly. Highly recommended for any modern facility."
           </p>
-          <h4 class="font-semibold text-gray-800">- City Hospital</h4>
+
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center font-bold text-blue-600">CH
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-900 uppercase tracking-tight">City Hospital</h4>
+              <p class="text-sm text-gray-500">Dhaka, Bangladesh</p>
+            </div>
+          </div>
         </div>
-        <div class="bg-gray-50 rounded-lg p-8 shadow-md">
-          <p class="text-gray-600 mb-4 italic">"Fast delivery and genuine products. Very professional team."</p>
-          <h4 class="font-semibold text-gray-800">- Green Life Clinic</h4>
+
+        <div
+          class="relative bg-gray-50 p-8 md:p-10 rounded-3xl border border-gray-100 hover:shadow-xl transition-all duration-300 group">
+          <div
+            class="absolute -top-5 left-10 w-10 h-10 bg-[#ff7a18] text-white rounded-full flex items-center justify-center shadow-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C15.4647 8 15.017 8.44772 15.017 9V12C15.017 12.5523 14.5693 13 14.017 13H12.017V21H14.017ZM5.017 21L5.017 18C5.017 16.8954 5.91243 16 7.017 16H10.017C10.5693 16 11.017 15.5523 11.017 15V9C11.017 8.44772 10.5693 8 10.017 8H7.017C6.46472 8 6.017 8.44772 6.017 9V12C6.017 12.5523 5.56929 13 5.017 13H3.017V21H5.017Z" />
+            </svg>
+          </div>
+
+          <div class="mb-6 flex gap-1">
+            <span class="text-yellow-400">★★★★★</span>
+          </div>
+
+          <p class="text-gray-700 text-lg leading-relaxed mb-8 italic">
+            "Fast delivery and genuine products. Very professional team. Their commitment to after-sales service is what
+            sets them apart from other medical suppliers in the market."
+          </p>
+
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center font-bold text-green-600">
+              GL</div>
+            <div>
+              <h4 class="font-bold text-gray-900 uppercase tracking-tight">Green Life Clinic</h4>
+              <p class="text-sm text-gray-500">Chittagong, Bangladesh</p>
+            </div>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
 
   <!-- ===== CTA ===== -->
-  <section class="py-16 md:py-24 px-4 bg-gradient-to-r from-blue-600 to-blue-700">
-    <div class="max-w-4xl mx-auto text-center text-white">
-      <h2 class="text-3xl md:text-4xl font-bold mb-4">Need Medical Equipment?</h2>
-      <p class="text-lg mb-8">Contact Us Today for Quality & Trusted Medical Solutions</p>
-      <a href="contact.html"
-        class="inline-block bg-white text-blue-600 font-semibold px-10 py-3 rounded-lg hover:bg-gray-100 transition">Contact
-        Us</a>
+  <section class="py-16 md:py-28 px-4 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-blue-700 via-blue-800 to-indigo-900"></div>
+    <div class="absolute top-0 left-0 w-64 h-64 bg-white opacity-5 rounded-full -translate-x-1/2 -translate-y-1/2">
+    </div>
+    <div
+      class="absolute bottom-0 right-0 w-96 h-96 bg-orange-500 opacity-10 rounded-full translate-x-1/3 translate-y-1/3">
+    </div>
+
+    <div class="max-w-5xl mx-auto relative z-10 text-center">
+      <div
+        class="inline-block px-4 py-1.5 mb-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-full text-white text-sm font-medium tracking-wide">
+        Available 24/7 for your healthcare needs
+      </div>
+
+      <h2 class="text-3xl md:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight">
+        Ready to Upgrade Your <br class="hidden md:block"> <span class="text-orange-400">Medical Facilities?</span>
+      </h2>
+
+      <p class="text-blue-100 text-lg md:text-xl mb-10 max-w-2xl mx-auto leading-relaxed">
+        Join hundreds of trusted hospitals and clinics. Get a custom quote for genuine medical equipment today.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="contact.html" class="cta-btn-primary">
+          <span>Get A Quote Today</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              clip-rule="evenodd" />
+          </svg>
+        </a>
+
+        <a href="tel:+880123456789"
+          class="flex items-center gap-3 text-white font-bold hover:text-orange-400 transition-colors">
+          <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+          </div>
+          Call Us: +880 1XXX-XXXXXX
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- ===== FOOTER ===== -->
-  <footer class="bg-gradient-to-r from-gray-900 via-gray-800 to-black text-white py-16 px-4">
-    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-      <!-- About -->
-      <div>
-        <img src="img/Untitled-1.jpg" alt="Logo" class="w-32 mb-4 rounded">
+  <footer class="bg-[#0f172a] text-white pt-16 pb-8 px-4 overflow-hidden relative">
+    <div class="absolute top-0 right-0 w-64 h-64 bg-blue-600/10 rounded-full blur-3xl"></div>
+
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 relative z-10">
+
+      <div class="space-y-6">
+        <img src="img/Untitled-1.jpg" alt="Healix Prime Logo" class="w-40 rounded-lg shadow-lg border border-gray-800">
         <p class="text-gray-400 text-sm leading-relaxed">
-          Healix Prime serves the healthcare sector with cutting-edge medical equipment, delivering reliable supply,
-          international standard products, and timely, affordable solutions to improve diagnostic accuracy and patient
-          outcomes.
+          Healix Prime is Bangladesh's leading provider of advanced medical technologies. We bridge the gap between
+          global innovation and local healthcare excellence.
         </p>
-      </div>
-
-      <!-- Connect -->
-      <div>
-        <h3 class="text-lg font-bold mb-6">Connect with Us</h3>
-        <ul class="text-gray-400 text-sm space-y-3">
-          <li class="flex items-center gap-2">
-            <i class="fa fa-envelope text-blue-400"></i>
-            info@healixprime.com
-          </li>
-          <li class="flex items-center gap-2">
-            <i class="fa fa-envelope text-blue-400"></i>
-            sales@healixprime.com
-          </li>
-          <li class="flex items-center gap-2">
-            <i class="fa fa-phone text-blue-400"></i>
-            +8801784847377
-          </li>
-          <li class="flex items-center gap-2">
-            <i class="fa fa-location-dot text-blue-400"></i>
-            Commercial Cove, 56/C, Road No. 132, Gulshan-1
-          </li>
-        </ul>
-      </div>
-
-      <!-- Quick Links -->
-      <div>
-        <h3 class="text-lg font-bold mb-6">Quick Links</h3>
-        <ul class="text-gray-400 text-sm space-y-2">
-          <li><a href="#" class="hover:text-blue-400 transition">Machinery</a></li>
-          <li><a href="#" class="hover:text-blue-400 transition">Heavy Equipments</a></li>
-          <li><a href="#" class="hover:text-blue-400 transition">Generator</a></li>
-          <li><a href="#" class="hover:text-blue-400 transition">Pumps</a></li>
-          <li><a href="about.html" class="hover:text-blue-400 transition">About Us</a></li>
-          <li><a href="contact.html" class="hover:text-blue-400 transition">Contact Us</a></li>
-        </ul>
-      </div>
-
-      <!-- Newsletter -->
-      <div>
-        <h3 class="text-lg font-bold mb-6">Our Newsletter</h3>
-        <p class="text-gray-400 text-sm mb-4">Signup for our latest news & articles.</p>
-        <div class="flex border-b border-gray-600">
-          <input type="email" placeholder="Email Address"
-            class="flex-1 bg-transparent text-white text-sm py-2 outline-none placeholder-gray-500">
-          <button class="text-blue-400 hover:text-blue-300 transition">
-            <i class="fa fa-paper-plane"></i>
-          </button>
+        <div class="flex gap-4">
+          <a href="#"
+            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#ff7a18] transition-all duration-300">
+            <i class="fab fa-facebook-f text-sm"></i>
+          </a>
+          <a href="#"
+            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#ff7a18] transition-all duration-300">
+            <i class="fab fa-linkedin-in text-sm"></i>
+          </a>
+          <a href="#"
+            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#ff7a18] transition-all duration-300">
+            <i class="fab fa-twitter text-sm"></i>
+          </a>
         </div>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-6 border-l-4 border-[#ff7a18] pl-3">Quick Links</h3>
+        <ul class="space-y-3">
+          <li><a href="about.html"
+              class="text-gray-400 hover:text-[#ff7a18] hover:pl-2 transition-all duration-300 flex items-center gap-2"><span>&rsaquo;</span>
+              About Us</a></li>
+          <li><a href="category.html"
+              class="text-gray-400 hover:text-[#ff7a18] hover:pl-2 transition-all duration-300 flex items-center gap-2"><span>&rsaquo;</span>
+              Medical Machinery</a></li>
+          <li><a href="category.html"
+              class="text-gray-400 hover:text-[#ff7a18] hover:pl-2 transition-all duration-300 flex items-center gap-2"><span>&rsaquo;</span>
+              Diagnostic Tools</a></li>
+          <li><a href="#"
+              class="text-gray-400 hover:text-[#ff7a18] hover:pl-2 transition-all duration-300 flex items-center gap-2"><span>&rsaquo;</span>
+              Our Partners</a></li>
+          <li><a href="contact.html"
+              class="text-gray-400 hover:text-[#ff7a18] hover:pl-2 transition-all duration-300 flex items-center gap-2"><span>&rsaquo;</span>
+              Contact Support</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-6 border-l-4 border-blue-600 pl-3">Get In Touch</h3>
+        <ul class="text-gray-400 text-sm space-y-5">
+          <li class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-lg bg-blue-600/10 flex items-center justify-center text-blue-500 shrink-0">
+              <i class="fas fa-location-dot"></i>
+            </div>
+            <span>Commercial Cove, 56/C, Road No. 132, Gulshan-1, Dhaka</span>
+          </li>
+          <li class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded-lg bg-blue-600/10 flex items-center justify-center text-blue-500 shrink-0">
+              <i class="fas fa-phone"></i>
+            </div>
+            <span>+880 1784-847377</span>
+          </li>
+          <li class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded-lg bg-blue-600/10 flex items-center justify-center text-blue-500 shrink-0">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <span>info@healixprime.com</span>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-6 border-l-4 border-white pl-3">Stay Updated</h3>
+        <p class="text-gray-400 text-sm mb-6">Subscribe to receive latest equipment updates and healthcare news.</p>
+        <form class="space-y-3">
+          <div class="relative">
+            <input type="email" placeholder="Your Email"
+              class="w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#ff7a18] transition">
+            <button class="absolute right-2 top-2 bottom-2 bg-[#ff7a18] px-4 rounded-lg hover:bg-orange-600 transition">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+          <p class="text-[10px] text-gray-500">* We respect your privacy. No spam.</p>
+        </form>
       </div>
     </div>
 
-    <!-- Footer Bottom -->
-    <div class="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
-      © Copyright 2026. All rights reserved.
+    <div
+      class="max-w-7xl mx-auto border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-gray-500 text-sm">
+        © 2026 <span class="text-white font-bold">Healix Prime</span>. All rights reserved.
+      </p>
+      <div class="flex gap-6 text-sm text-gray-500">
+        <a href="#" class="hover:text-white transition">Privacy Policy</a>
+        <a href="#" class="hover:text-white transition">Terms of Service</a>
+      </div>
     </div>
   </footer>
 

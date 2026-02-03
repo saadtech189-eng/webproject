@@ -1,200 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Healix Prime | Our Team</title>
+  <title>Healix Prime | Home</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="font-serif">
-<!-- ===== TOP BAR ===== -->
-<div class="bg-blue-600 text-white py-2 px-4 md:px-10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs md:text-sm">
-  <div class="text-center md:text-left">
-    ISO 9001:2015 Certified
-  </div>
-  <div class="flex flex-col md:flex-row gap-4 text-center md:text-right">
-    <span class="flex items-center justify-center md:justify-end gap-2">
-      <i class="fa fa-envelope"></i>
-      info@healixprime.com
-    </span>
-    <span class="flex items-center justify-center md:justify-end gap-2">
-      <a href="https://www.google.com/maps?q=Commercial+Cove+Gulshan+1+Dhaka" target="_blank" class="flex items-center gap-2 hover:opacity-80">
-        <i class="fa fa-location-dot"></i>
-        Commercial Cove, 5/C, Road No. 132, Gulshan-1
-      </a>
-    </span>
-  </div>
-</div>
-
-<!-- ===== NAVBAR ===== -->
-<nav class="bg-white shadow-md sticky top-0 z-50 py-4 px-4 md:px-10">
-  <div class="flex justify-between items-center flex-wrap gap-4">
-    <div class="w-32 md:w-40">
-      <img src="img/Healix-Prime-Logo_Print-removebg-preview.png" alt="Healix Prime" class="w-full">
+  <!-- ===== TOP BAR ===== -->
+  <div
+    class="bg-blue-600 text-white py-2 px-4 md:px-10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs md:text-sm">
+    <div class="text-center md:text-left">
+      ISO 9001:2015 Certified
     </div>
-
-    <button id="menu-toggle" class="md:hidden text-gray-700 text-2xl">
-      <i class="fas fa-bars"></i>
-    </button>
-
-    <ul id="menu" class="hidden md:flex flex-col md:flex-row gap-4 md:gap-6 w-full md:w-auto absolute md:static top-full left-0 right-0 bg-white md:bg-transparent p-4 md:p-0 text-center md:text-left">
-      <li><a href="index.html" class="text-gray-700 hover:text-blue-600 transition">Home</a></li>
-      <li class="relative group">
-        <a href="#" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-1">
-          About Us
-          <i class="fas fa-chevron-down text-xs"></i>
+    <div class="flex flex-col md:flex-row gap-4 text-center md:text-right">
+      <span class="flex items-center justify-center md:justify-end gap-2">
+        <i class="fa fa-envelope"></i>
+        info@healixprime.com
+      </span>
+      <span class="flex items-center justify-center md:justify-end gap-2">
+        <a href="https://www.google.com/maps?q=Commercial+Cove+Gulshan+1+Dhaka" target="_blank"
+          class="flex items-center gap-2 hover:opacity-80">
+          <i class="fa fa-location-dot"></i>
+          Commercial Cove, 5/C, Road No. 132, Gulshan-1
         </a>
-        <ul class="hidden group-hover:block absolute left-0 top-full bg-white shadow-lg rounded mt-1 min-w-max">
-          <li><a href="our-team.html" class="block px-4 py-2 text-gray-700 hover:text-blue-600 transition">Our Team</a></li>
-        </ul>
-      </li>
-      <li><a href="product.html" class="text-gray-700 hover:text-blue-600 transition">Product by Category</a></li>
-      <li><a href="category.html" class="text-gray-700 hover:text-blue-600 transition">Products</a></li>
-      <li><a href="contact.html" class="text-gray-700 hover:text-blue-600 transition">Contact</a></li>
-    </ul>
-
-    <div class="hidden md:block">
-      <a href="https://wa.me/8801784847377" target="_blank" class="flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition">
-        <i class="fab fa-whatsapp"></i>
-        <span class="hidden lg:inline">+8801784847377</span>
-      </a>
+      </span>
     </div>
   </div>
-</nav>
+  <!-- ===== NAVBAR ===== -->
+  <nav class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50 py-3 px-4 md:px-10 border-b border-gray-100">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
 
-<!-- ===== TEAM SECTION ===== -->
-<section class="py-16 md:py-24 px-4 bg-gradient-to-b from-blue-50 to-white">
-  <div class="max-w-6xl mx-auto">
-    <!-- Team Header -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-      <div>
-        <span class="text-orange-500 font-bold text-sm tracking-widest">⭐ MEET OUR BOARD MEMBERS</span>
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mt-4 leading-tight">
-          Meet the Visionaries<br>Behind Healix Prime
-        </h2>
+      <div class="flex-shrink-0">
+        <a href="index.html">
+          <img src="img/Healix-Prime-Logo_Print-removebg-preview.png" alt="Healix Prime"
+            class="h-10 md:h-14 w-auto object-contain">
+        </a>
       </div>
-      <div class="bg-white rounded-lg p-8 shadow-lg">
-        <p class="text-gray-700 leading-relaxed">
-          At <strong>Healix Prime</strong>, our success is driven by the vision, expertise, and dedication of our board members. As founders and leaders, they are committed to advancing medical technology, empowering healthcare professionals, and ensuring the highest standards of patient care. Their guidance shapes every step we take toward a healthier future.
+
+      <ul class="hidden md:flex items-center gap-8">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <!-- <li><a href="about.html" class="nav-link">About Us</a></li> -->
+        <li class="relative group">
+          <a href="about.html" class="nav-link flex items-center gap-1">
+            About Us
+            <i class="fas fa-chevron-down text-[10px] transition-transform group-hover:rotate-180"></i>
+          </a>
+
+          <div
+            class="absolute top-full left-0 w-52 bg-white shadow-2xl rounded-2xl border border-gray-50 py-3 px-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-4 group-hover:translate-y-1 z-50">
+            <a href="our-team.html"
+              class="flex items-center gap-3 px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#ff7a18] rounded-xl transition-all duration-200">
+
+              <span>Our Team</span>
+            </a>
+
+
+
+          </div>
+        </li>
+        <li class="relative group">
+          <a href="category.html" class="nav-link flex items-center gap-1">
+            Products <i class="fas fa-chevron-down text-[10px]"></i>
+          </a>
+          <div
+            class="absolute top-full left-0 w-48 bg-white shadow-xl rounded-xl border border-gray-50 p-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0">
+            <a href="#"
+              class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text--[#ff7a18] rounded-lg">Radiology</a>
+            <a href="#"
+              class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text--[#ff7a18] rounded-lg">Orthology</a>
+          </div>
+        </li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="hidden md:flex items-center gap-6">
+        <button class="text-gray-500 hover:text-[#ff7a18] transition">
+          <i class="fas fa-search text-lg"></i>
+        </button>
+
+        <a href="contact.html"
+          class="bg-[#ff7a18] text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-blue-600 hover:shadow-lg hover:shadow-blue-200 transition-all duration-300 transform hover:-translate-y-0.5">
+          Get a Quote
+        </a>
+      </div>
+
+      <button id="menu-toggle" class="md:hidden text-gray-800 p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== TEAM SECTION ===== -->
+  <section class="py-20 md:py-32 bg-[#fafafa] relative overflow-hidden">
+
+    <div class="absolute top-0 left-0 w-full h-full pointer-events-none opacity-40">
+      <div class="absolute top-10 left-10 w-64 h-64 bg-blue-100 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-20 right-10 w-80 h-80 bg-orange-100 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 relative z-10">
+
+      <div class="flex flex-col md:flex-row items-center gap-6 mb-24">
+        <h2 class="text-5xl md:text-7xl font-black text-gray-900 tracking-tighter">
+          THE <span class="text-blue-600">LEADERS</span>
+        </h2>
+        <div class="hidden md:block h-px flex-1 bg-gray-200"></div>
+        <p
+          class="md:max-w-xs text-gray-500 font-medium text-sm uppercase tracking-widest leading-loose text-center md:text-right">
+          Visionary leadership driving the future of healthcare in Bangladesh.
         </p>
       </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24">
+
+        <div class="relative group">
+          <div class="relative z-10 overflow-hidden rounded-[2rem] shadow-2xl">
+            <img src="img/4.jpeg" alt="A R Mamun Khan"
+              class="w-full h-[500px] object-cover transition-transform duration-1000 group-hover:scale-110">
+          </div>
+          <div
+            class="absolute -bottom-10 -right-4 md:right-10 z-20 bg-white/80 backdrop-blur-xl p-8 rounded-2xl shadow-xl border border-white/50 max-w-[280px] transform transition-transform duration-500 group-hover:-translate-y-4">
+            <span class="text-[#ff7a18] font-black text-xs tracking-widest uppercase">Chairman</span>
+            <h3 class="text-2xl font-black text-gray-900 mt-2">A R MAMUN KHAN</h3>
+            <p class="text-gray-500 text-xs mt-3 leading-relaxed">Pioneer in medical technology integration and
+              strategic growth.</p>
+          </div>
+        </div>
+
+        <div class="relative group lg:mt-20">
+          <div class="relative z-10 overflow-hidden rounded-[2rem] shadow-2xl">
+            <img src="img/1.jpeg" alt="Shaheed Mohammed Zia Masud"
+              class="w-full h-[500px] object-cover transition-transform duration-1000 group-hover:scale-110">
+          </div>
+          <div
+            class="absolute -bottom-10 -left-4 md:left-10 z-20 bg-gray-900/90 backdrop-blur-xl p-8 rounded-2xl shadow-xl max-w-[280px] transform transition-transform duration-500 group-hover:-translate-y-4 text-white">
+            <span class="text-blue-400 font-black text-xs tracking-widest uppercase">Managing Director</span>
+            <h3 class="text-2xl font-black mt-2">S. M. ZIA MASUD</h3>
+            <p class="text-gray-400 text-xs mt-3 leading-relaxed">Driving operational excellence and global manufacturer
+              partnerships.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 pt-20">
+
+        <div class="flex flex-col items-center group">
+          <div class="relative w-48 h-48 mb-6">
+            <div
+              class="absolute inset-0 bg-blue-600 rounded-full rotate-6 group-hover:rotate-0 transition-transform duration-500">
+            </div>
+            <img src="img/27.01.2026_01.05.44_REC.png" alt="Director"
+              class="absolute inset-0 w-full h-full object-cover rounded-full border-4 border-white shadow-lg">
+          </div>
+          <h4 class="text-lg font-black text-gray-800 uppercase">MD RAHMET ULLAH</h4>
+          <p class="text-[#ff7a18] text-xs font-bold tracking-widest">DIRECTOR</p>
+        </div>
+
+        <div class="flex flex-col items-center group">
+          <div class="relative w-48 h-48 mb-6">
+            <div
+              class="absolute inset-0 bg-orange-500 rounded-full -rotate-6 group-hover:rotate-0 transition-transform duration-500">
+            </div>
+            <img src="img/3.jpeg" alt="Director"
+              class="absolute inset-0 w-full h-full object-cover rounded-full border-4 border-white shadow-lg">
+          </div>
+          <h4 class="text-lg font-black text-gray-800 uppercase">AHMED ISHTIAQ</h4>
+          <p class="text-[#ff7a18] text-xs font-bold tracking-widest">DIRECTOR</p>
+        </div>
+
+        <div class="flex flex-col items-center group">
+          <div class="relative w-48 h-48 mb-6">
+            <div
+              class="absolute inset-0 bg-gray-800 rounded-full rotate-6 group-hover:rotate-0 transition-transform duration-500">
+            </div>
+            <img src="img/2.jpeg" alt="Director"
+              class="absolute inset-0 w-full h-full object-cover rounded-full border-4 border-white shadow-lg">
+          </div>
+          <h4 class="text-lg font-black text-gray-800 uppercase">MIR SOLAIMAN</h4>
+          <p class="text-[#ff7a18] text-xs font-bold tracking-widest">DIRECTOR</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-[#0f172a] text-white pt-16 pb-8 px-4 overflow-hidden relative">
+    <div class="absolute top-0 right-0 w-64 h-64 bg-blue-600/10 rounded-full blur-3xl"></div>
+
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 relative z-10">
+
+      <div class="space-y-6">
+        <img src="img/Untitled-1.jpg" alt="Healix Prime Logo" class="w-40 rounded-lg shadow-lg border border-gray-800">
+        <p class="text-gray-400 text-sm leading-relaxed">
+          Healix Prime is Bangladesh's leading provider of advanced medical technologies. We bridge the gap between
+          global innovation and local healthcare excellence.
+        </p>
+        <div class="flex gap-4">
+          <a href="#"
+            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#ff7a18] transition-all duration-300">
+            <i class="fab fa-facebook-f text-sm"></i>
+          </a>
+          <a href="#"
+            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#ff7a18] transition-all duration-300">
+            <i class="fab fa-linkedin-in text-sm"></i>
+          </a>
+          <a href="#"
+            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#ff7a18] transition-all duration-300">
+            <i class="fab fa-twitter text-sm"></i>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-6 border-l-4 border-[#ff7a18] pl-3">Quick Links</h3>
+        <ul class="space-y-3">
+          <li><a href="about.html"
+              class="text-gray-400 hover:text-[#ff7a18] hover:pl-2 transition-all duration-300 flex items-center gap-2"><span>&rsaquo;</span>
+              About Us</a></li>
+          <li><a href="category.html"
+              class="text-gray-400 hover:text-[#ff7a18] hover:pl-2 transition-all duration-300 flex items-center gap-2"><span>&rsaquo;</span>
+              Medical Machinery</a></li>
+          <li><a href="category.html"
+              class="text-gray-400 hover:text-[#ff7a18] hover:pl-2 transition-all duration-300 flex items-center gap-2"><span>&rsaquo;</span>
+              Diagnostic Tools</a></li>
+          <li><a href="#"
+              class="text-gray-400 hover:text-[#ff7a18] hover:pl-2 transition-all duration-300 flex items-center gap-2"><span>&rsaquo;</span>
+              Our Partners</a></li>
+          <li><a href="contact.html"
+              class="text-gray-400 hover:text-[#ff7a18] hover:pl-2 transition-all duration-300 flex items-center gap-2"><span>&rsaquo;</span>
+              Contact Support</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-6 border-l-4 border-blue-600 pl-3">Get In Touch</h3>
+        <ul class="text-gray-400 text-sm space-y-5">
+          <li class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-lg bg-blue-600/10 flex items-center justify-center text-blue-500 shrink-0">
+              <i class="fas fa-location-dot"></i>
+            </div>
+            <span>Commercial Cove, 56/C, Road No. 132, Gulshan-1, Dhaka</span>
+          </li>
+          <li class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded-lg bg-blue-600/10 flex items-center justify-center text-blue-500 shrink-0">
+              <i class="fas fa-phone"></i>
+            </div>
+            <span>+880 1784-847377</span>
+          </li>
+          <li class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded-lg bg-blue-600/10 flex items-center justify-center text-blue-500 shrink-0">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <span>info@healixprime.com</span>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-6 border-l-4 border-white pl-3">Stay Updated</h3>
+        <p class="text-gray-400 text-sm mb-6">Subscribe to receive latest equipment updates and healthcare news.</p>
+        <form class="space-y-3">
+          <div class="relative">
+            <input type="email" placeholder="Your Email"
+              class="w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#ff7a18] transition">
+            <button class="absolute right-2 top-2 bottom-2 bg-[#ff7a18] px-4 rounded-lg hover:bg-orange-600 transition">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+          <p class="text-[10px] text-gray-500">* We respect your privacy. No spam.</p>
+        </form>
+      </div>
     </div>
 
-    <!-- Top Row: Chairman + MD -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-      <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl hover:scale-105 transition text-center">
-        <img src="img/4.jpeg" alt="A R Mamun Khan" class="w-full h-80 object-cover">
-        <div class="p-8">
-          <h3 class="text-xl font-bold text-gray-800 mb-2">A R MAMUN KHAN</h3>
-          <span class="text-orange-500 font-semibold">Chairman</span>
-        </div>
-      </div>
-
-      <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl hover:scale-105 transition text-center">
-        <img src="img/1.jpeg" alt="Shaheed Mohammed Zia Masud" class="w-full h-80 object-cover">
-        <div class="p-8">
-          <h3 class="text-xl font-bold text-gray-800 mb-2">SHAHEED MOHAMMED ZIA MASUD</h3>
-          <span class="text-orange-500 font-semibold">Managing Director</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Bottom Row: Directors -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl hover:scale-105 transition text-center">
-        <img src="img/27.01.2026_01.05.44_REC.png" alt="MD Rahmet Ullah" class="w-full h-72 object-cover">
-        <div class="p-8">
-          <h3 class="text-xl font-bold text-gray-800 mb-2">MD RAHMET ULLAH</h3>
-          <span class="text-orange-500 font-semibold">Director</span>
-        </div>
-      </div>
-
-      <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl hover:scale-105 transition text-center">
-        <img src="img/3.jpeg" alt="Ahmed Ishtiaq Zabihullah" class="w-full h-72 object-cover">
-        <div class="p-8">
-          <h3 class="text-xl font-bold text-gray-800 mb-2">AHMED ISHTIAQ ZABIHULLAH</h3>
-          <span class="text-orange-500 font-semibold">Director</span>
-        </div>
-      </div>
-
-      <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl hover:scale-105 transition text-center">
-        <img src="img/2.jpeg" alt="Mir Solaiman" class="w-full h-72 object-cover">
-        <div class="p-8">
-          <h3 class="text-xl font-bold text-gray-800 mb-2">MIR SOLAIMAN</h3>
-          <span class="text-orange-500 font-semibold">Director</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== FOOTER ===== -->
-<footer class="bg-gradient-to-r from-gray-900 via-gray-800 to-black text-white py-16 px-4">
-  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-    <div>
-      <img src="img/Untitled-1.jpg" alt="Logo" class="w-32 mb-4 rounded">
-      <p class="text-gray-400 text-sm leading-relaxed">
-        Healix Prime serves the healthcare sector with cutting-edge medical equipment, delivering reliable supply, international standard products, and timely, affordable solutions to improve diagnostic accuracy and patient outcomes.
+    <div
+      class="max-w-7xl mx-auto border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-gray-500 text-sm">
+        © 2026 <span class="text-white font-bold">Healix Prime</span>. All rights reserved.
       </p>
-    </div>
-
-    <div>
-      <h3 class="text-lg font-bold mb-6">Connect with Us</h3>
-      <ul class="text-gray-400 text-sm space-y-3">
-        <li class="flex items-center gap-2">
-          <i class="fa fa-envelope text-blue-400"></i>
-          info@healixprime.com
-        </li>
-        <li class="flex items-center gap-2">
-          <i class="fa fa-envelope text-blue-400"></i>
-          sales@healixprime.com
-        </li>
-        <li class="flex items-center gap-2">
-          <i class="fa fa-phone text-blue-400"></i>
-          +8801784847377
-        </li>
-        <li class="flex items-center gap-2">
-          <i class="fa fa-location-dot text-blue-400"></i>
-          Commercial Cove, 56/C, Road No. 132, Gulshan-1
-        </li>
-      </ul>
-    </div>
-
-    <div>
-      <h3 class="text-lg font-bold mb-6">Quick Links</h3>
-      <ul class="text-gray-400 text-sm space-y-2">
-        <li><a href="index.html" class="hover:text-blue-400 transition">Home</a></li>
-        <li><a href="about.html" class="hover:text-blue-400 transition">About Us</a></li>
-        <li><a href="product.html" class="hover:text-blue-400 transition">Products</a></li>
-        <li><a href="category.html" class="hover:text-blue-400 transition">Product Details</a></li>
-        <li><a href="contact.html" class="hover:text-blue-400 transition">Contact Us</a></li>
-      </ul>
-    </div>
-
-    <div>
-      <h3 class="text-lg font-bold mb-6">Our Newsletter</h3>
-      <p class="text-gray-400 text-sm mb-4">Signup for our latest news & articles.</p>
-      <div class="flex border-b border-gray-600">
-        <input type="email" placeholder="Email Address" class="flex-1 bg-transparent text-white text-sm py-2 outline-none placeholder-gray-500">
-        <button class="text-blue-400 hover:text-blue-300 transition">
-          <i class="fa fa-paper-plane"></i>
-        </button>
+      <div class="flex gap-6 text-sm text-gray-500">
+        <a href="#" class="hover:text-white transition">Privacy Policy</a>
+        <a href="#" class="hover:text-white transition">Terms of Service</a>
       </div>
     </div>
-  </div>
+  </footer>
 
-  <div class="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
-    © Copyright 2026. All rights reserved.
-  </div>
-</footer>
+  <!-- ===== WHATSAPP FLOAT BUTTON ===== -->
+  <a href="https://wa.me/8801784847377" target="_blank"
+    class="fixed bottom-6 right-6 w-14 h-14 bg-green-500 text-white rounded-full flex items-center justify-center text-2xl hover:bg-green-600 transition z-40 shadow-lg"
+    style="animation: pulse 2s infinite;">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
-<!-- ===== WHATSAPP FLOAT BUTTON ===== -->
-<a href="https://wa.me/8801784847377" target="_blank" class="fixed bottom-6 right-6 w-14 h-14 bg-green-500 text-white rounded-full flex items-center justify-center text-2xl hover:bg-green-600 transition z-40 shadow-lg" style="animation: pulse 2s infinite;">
-  <i class="fab fa-whatsapp"></i>
-</a>
-
-<script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
