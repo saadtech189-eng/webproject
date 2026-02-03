@@ -1,295 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Healix Prime | Home</title>
-
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healix Prime | About Us</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    .counter {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+  </style>
 </head>
 
-<body id="myPage">
-
+<body class="font-serif">
 <!-- ===== TOP BAR ===== -->
-<div class="top-bar">
-
-  <div class="top-left">
+<div class="bg-blue-600 text-white py-2 px-4 md:px-10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs md:text-sm">
+  <div class="text-center md:text-left">
     ISO 9001:2015 Certified
   </div>
-
-  <div class="top-right">
-    <span>
+  <div class="flex flex-col md:flex-row gap-4 text-center md:text-right">
+    <span class="flex items-center justify-center md:justify-end gap-2">
       <i class="fa fa-envelope"></i>
-      info@emcpowercore.com
+      info@healixprime.com
     </span>
-
-    <span>
-      <a href="https://www.google.com/maps?q=Commercial+Cove+Gulshan+1+Dhaka" target="_blank">
-        <i class="fa fa-location-dot"></i></a>
+    <span class="flex items-center justify-center md:justify-end gap-2">
+      <a href="https://www.google.com/maps?q=Commercial+Cove+Gulshan+1+Dhaka" target="_blank" class="flex items-center gap-2 hover:opacity-80">
+        <i class="fa fa-location-dot"></i>
         Commercial Cove, 5/C, Road No. 132, Gulshan-1
       </a>
     </span>
   </div>
-
 </div>
 
 <!-- ===== NAVBAR ===== -->
-<nav class="navbar">
+<nav class="bg-white shadow-md sticky top-0 z-50 py-4 px-4 md:px-10">
+  <div class="flex justify-between items-center flex-wrap gap-4">
+    <div class="w-32 md:w-40">
+      <img src="img/Healix-Prime-Logo_Print-removebg-preview.png" alt="Healix Prime" class="w-full">
+    </div>
 
-  <div class="logo">
-    <img src="img/Healix-Prime-Logo_Print-removebg-preview.png" alt="Healix Prime Logo">
+    <button id="menu-toggle" class="md:hidden text-gray-700 text-2xl">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <ul id="menu" class="hidden md:flex flex-col md:flex-row gap-4 md:gap-6 w-full md:w-auto absolute md:static top-full left-0 right-0 bg-white md:bg-transparent p-4 md:p-0 text-center md:text-left">
+      <li><a href="index.html" class="text-gray-700 hover:text-blue-600 transition">Home</a></li>
+      <li class="relative group">
+        <a href="#" class="text-gray-700 hover:text-blue-600 transition flex items-center gap-1">
+          About Us
+          <i class="fas fa-chevron-down text-xs"></i>
+        </a>
+        <ul class="hidden group-hover:block absolute left-0 top-full bg-white shadow-lg rounded mt-1 min-w-max">
+          <li><a href="our-team.html" class="block px-4 py-2 text-gray-700 hover:text-blue-600 transition">Our Team</a></li>
+        </ul>
+      </li>
+      <li><a href="product.html" class="text-gray-700 hover:text-blue-600 transition">Product by Category</a></li>
+      <li><a href="category.html" class="text-gray-700 hover:text-blue-600 transition">Products</a></li>
+      <li><a href="contact.html" class="text-gray-700 hover:text-blue-600 transition">Contact</a></li>
+    </ul>
+
+    <div class="hidden md:block">
+      <a href="https://wa.me/8801784847377" target="_blank" class="flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition">
+        <i class="fab fa-whatsapp"></i>
+        <span class="hidden lg:inline">+8801784847377</span>
+      </a>
+    </div>
   </div>
-
-  <ul class="menu">
-    <li><a href="index.html" target="_blank">Home</a></li>
-       <li class="dropdown">
-  <a href="#">About Us <i class="arrow">▼</i></a>
-  <ul class="dropdown-menu">
-    <li><a href="our-team.html">Our Team</a></li>
-  </ul>
-</li>
-        <li><a href="product.html"target="_blank">Product by category</a></li>
-        <li><a href="category.html"target="_blank">Products</a></li>
-        <li><a href="contact.html"target="_blank">Contact</a></li>
-  </ul>
-
-  <div class="whatsapp">
-    <a href="https://wa.me/8801784847377" target="_blank">
-      <i class="fab fa-whatsapp"></i> +8801784847377
-    </a>
-  </div>
-
 </nav>
-<section class="about-hero">
-  <div class="about-hero-container">
 
-    <!-- Left Animated Image -->
-    <div class="about-hero-img">
-      <img src="img/about.png" alt="Medical Equipment">
+<!-- ===== ABOUT HERO ===== -->
+<section class="py-16 md:py-24 px-4">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+      <div class="order-2 md:order-1">
+        <img src="img/about.png" alt="Medical Equipment" class="w-full rounded-lg shadow-lg">
+      </div>
+
+      <div class="order-1 md:order-2 bg-white p-8 rounded-lg shadow-lg">
+        <p class="text-gray-600 leading-relaxed mb-4">
+          Healix Prime is a trusted supplier of advanced medical equipment, delivering high-quality healthcare solutions to hospitals, clinics, and diagnostic centers across Bangladesh. We are committed to supporting healthcare providers with reliable products that comply with international quality and safety standards.
+        </p>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          Our product portfolio includes diagnostic imaging systems, hospital furniture, operation theatre equipment, and essential medical technologies sourced from globally recognized manufacturers. Each solution is carefully selected to ensure precision, performance, and long-term value.
+        </p>
+        <p class="text-gray-600 leading-relaxed">
+          At Healix Prime, we believe in building long-term partnerships through professional service, technical expertise, and dependable after-sales support. Guided by integrity and excellence, we aim to strengthen the healthcare infrastructure of Bangladesh and contribute to improved patient outcomes.
+        </p>
+      </div>
     </div>
-
-    <!-- Center Text Card -->
-    <div class="about-hero-card">
-      <p>
-        Healix Prime is a trusted supplier of advanced medical equipment, delivering
-        high-quality healthcare solutions to hospitals, clinics, and diagnostic centers
-        across Bangladesh. We are committed to supporting healthcare providers with
-        reliable products that comply with international quality and safety standards.
-      </p>
-
-      <p>
-        Our product portfolio includes diagnostic imaging systems, hospital furniture,
-        operation theatre equipment, and essential medical technologies sourced from
-        globally recognized manufacturers. Each solution is carefully selected to ensure
-        precision, performance, and long-term value.
-      </p>
-
-      <p>
-        At Healix Prime, we believe in building long-term partnerships through professional
-        service, technical expertise, and dependable after-sales support. Guided by
-        integrity and excellence, we aim to strengthen the healthcare infrastructure of
-        Bangladesh and contribute to improved patient outcomes.
-      </p>
-    </div>
-
   </div>
 </section>
 
-<div class="counter-section">
-  <div class="counter-box">
-    <h2 class="counter" data-target="150">0</h2>
-    <p>Complete Projects</p>
+<!-- ===== COUNTER SECTION ===== -->
+<section class="py-16 md:py-24 px-4 bg-gradient-to-r from-blue-600 to-blue-700">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
+      <div>
+        <h2 class="counter text-4xl md:text-5xl font-bold mb-2" data-target="150">0</h2>
+        <p class="text-blue-100">Complete Projects</p>
+      </div>
+      <div>
+        <h2 class="counter text-4xl md:text-5xl font-bold mb-2" data-target="100">0</h2>
+        <p class="text-blue-100">Team Members</p>
+      </div>
+      <div>
+        <h2 class="counter text-4xl md:text-5xl font-bold mb-2" data-target="200">0</h2>
+        <p class="text-blue-100">Client Reviews</p>
+      </div>
+      <div>
+        <h2 class="counter text-4xl md:text-5xl font-bold mb-2" data-target="30">0</h2>
+        <p class="text-blue-100">Winning Award</p>
+      </div>
+    </div>
   </div>
-
-  <div class="counter-box">
-    <h2 class="counter" data-target="100">0</h2>
-    <p>Team Members</p>
-  </div>
-
-  <div class="counter-box">
-    <h2 class="counter" data-target="200">0</h2>
-    <p>Client Reviews</p>
-  </div>
-
-  <div class="counter-box">
-    <h2 class="counter" data-target="30">0</h2>
-    <p>Winning Award</p>
-  </div>
-</div>
+</section>
 
 <!-- ===== VISION SECTION ===== -->
-<section class="vision-section">
+<section class="py-16 md:py-24 px-4">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Our Vision</h2>
+        <p class="text-gray-600 leading-relaxed mb-6">
+          To provide exceptional healthcare support services that exceed client expectations through innovation, quality craftsmanship, and a commitment to sustainability. We aim to build lasting relationships and create solutions that enhance communities.
+        </p>
+        <ul class="space-y-3 text-gray-600">
+          <li class="flex items-start gap-3">
+            <span class="text-green-500 font-bold mt-1">✓</span>
+            <span>Fostering Sustainable Growth and Green Development</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-green-500 font-bold mt-1">✓</span>
+            <span>Innovating for a Sustainable Future</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-green-500 font-bold mt-1">✓</span>
+            <span>Customer-Centric Approach</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-green-500 font-bold mt-1">✓</span>
+            <span>Building Stronger Communities</span>
+          </li>
+        </ul>
+      </div>
 
-  <div class="vision-text">
-    <h2>Our Vision</h2>
-    <p>
-      To provide exceptional construction services that exceed client expectations
-      through innovation, quality craftsmanship, and a commitment to sustainability.
-      We aim to build lasting relationships and create spaces that enhance communities.
-    </p>
-
-    <ul>
-      <li>Fostering Sustainable Growth and Green Development</li>
-      <li>Innovating for a Sustainable Future</li>
-      <li>Customer-Centric Approach</li>
-      <li>Building Stronger Communities</li>
-    </ul>
-  </div>
-
-  <div class="vision-images">
-    <img src="img/vission.jpg" class="img-big">
-    <img src="img/vission2.JPG" class="img-small">
+      <div class="grid grid-cols-1 gap-4">
+        <img src="img/vission.jpg" alt="Vision" class="w-full rounded-lg shadow-lg">
+        <img src="img/vission2.JPG" alt="Vision 2" class="w-full rounded-lg shadow-lg">
+      </div>
+    </div>
   </div>
 </section>
-
 
 <!-- ===== MISSION SECTION ===== -->
-<section class="mission-section">
-
-  <div class="mission-images">
-    <img src="img/mission.jpg" class="img-big">
-    <img src="img/mission 2.JPG" class="img-small">
-  </div>
-
-  <div class="mission-text">
-    <h2>Our Mission</h2>
-    <p>
-      To provide exceptional construction services that exceed client expectations
-      through innovation, quality craftsmanship, and a commitment to sustainability.
-      We aim to build lasting relationships and create spaces that enhance communities.
-    </p>
-
-    <ul>
-      <li>Fostering Sustainable Growth and Green Development</li>
-      <li>Innovating for a Sustainable Future</li>
-      <li>Customer-Centric Approach</li>
-      <li>Building Stronger Communities</li>
-    </ul>
-  </div>
-
-</section>
-<section class="why-choose">
-  <div class="why-container">
-
-    <div class="why-header">
-      <h2>WHY CHOOSE US</h2>
-      <h3>Trusted Medical Solutions</h3>
-      <p>
-        We deliver reliable, certified, and high-quality medical equipment with expert
-        support to ensure long-term healthcare excellence.
-      </p>
-    </div>
-
-    <div class="why-grid">
-
-      <div class="why-card">
-        <h4>Fast Delivery</h4>
-        <p>Quick supply of essential medical equipment to keep your operations running smoothly.</p>
+<section class="py-16 md:py-24 px-4 bg-gray-50">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+      <div class="grid grid-cols-1 gap-4 order-2 md:order-1">
+        <img src="img/mission.jpg" alt="Mission" class="w-full rounded-lg shadow-lg">
+        <img src="img/mission 2.JPG" alt="Mission 2" class="w-full rounded-lg shadow-lg">
       </div>
 
-      <div class="why-card">
-        <h4>24/7 Support</h4>
-        <p>Round-the-clock support for hospitals, clinics, and laboratories.</p>
+      <div class="order-1 md:order-2">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Our Mission</h2>
+        <p class="text-gray-600 leading-relaxed mb-6">
+          To provide exceptional healthcare support services that exceed client expectations through innovation, quality craftsmanship, and a commitment to sustainability. We aim to build lasting relationships and create solutions that enhance communities.
+        </p>
+        <ul class="space-y-3 text-gray-600">
+          <li class="flex items-start gap-3">
+            <span class="text-green-500 font-bold mt-1">✓</span>
+            <span>Fostering Sustainable Growth and Green Development</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-green-500 font-bold mt-1">✓</span>
+            <span>Innovating for a Sustainable Future</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-green-500 font-bold mt-1">✓</span>
+            <span>Customer-Centric Approach</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-green-500 font-bold mt-1">✓</span>
+            <span>Building Stronger Communities</span>
+          </li>
+        </ul>
       </div>
-
-      <div class="why-card">
-        <h4>Wide Range of Equipment</h4>
-        <p>From diagnostic machines to surgical tools, we cover all healthcare needs.</p>
-      </div>
-
-      <div class="why-card">
-        <h4>Certified Products</h4>
-        <p>Medical devices meeting international safety and quality standards.</p>
-      </div>
-
-      <div class="why-card">
-        <h4>Expert Consultation</h4>
-        <p>Professional guidance to choose the right equipment for your facility.</p>
-      </div>
-
-      <div class="why-card">
-        <h4>After Sales Services</h4>
-        <p>Maintenance and servicing support to ensure long-term reliability.</p>
-      </div>
-
-      <div class="why-card">
-        <h4>Compliance & Safety</h4>
-        <p>All products comply with local and international healthcare regulations.</p>
-      </div>
-
-      <div class="why-card">
-        <h4>Trusted by Hospitals</h4>
-        <p>Our equipment is used and recommended by leading healthcare institutions.</p>
-      </div>
-
     </div>
   </div>
 </section>
 
-<footer class="main-footer">
-  <div class="footer-container">
-
-    <!-- ABOUT -->
-    <div class="footer-col">
-      <img src="img/Untitled-1.jpg" class="footer-logo" alt="Logo">
-       <p>
-       Healix Prime serves the healthcare sector with cutting-edge medical equipment, 
-       delivering reliable supply, international standard products, and timely, affordable solutions to improve diagnostic accuracy and patient outcomes.
+<!-- ===== WHY CHOOSE US ===== -->
+<section class="py-16 md:py-24 px-4">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">WHY CHOOSE US</h2>
+      <h3 class="text-2xl font-semibold text-blue-600 mb-4">Trusted Medical Solutions</h3>
+      <p class="text-gray-600">
+        We deliver reliable, certified, and high-quality medical equipment with expert support to ensure long-term healthcare excellence.
       </p>
-  
     </div>
 
-    <!-- CONNECT -->
-    <div class="footer-col">
-      <h3>Connect with Us</h3>
-      <ul class="footer-contact">
-        <li><i class="fa fa-envelope"></i> info@emcpowercore.com</li>
-        <li><i class="fa fa-envelope"></i> sales@emcpowercore.com</li>
-        <li><i class="fa fa-phone"></i> +8801798444163</li>
-        <li>
-          <i class="fa fa-location-dot"></i>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition border-l-4 border-orange-500">
+        <h4 class="text-lg font-bold text-gray-800 mb-3">Fast Delivery</h4>
+        <p class="text-gray-600 text-sm">Quick supply of essential medical equipment to keep your operations running smoothly.</p>
+      </div>
+
+      <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition border-l-4 border-orange-500">
+        <h4 class="text-lg font-bold text-gray-800 mb-3">24/7 Support</h4>
+        <p class="text-gray-600 text-sm">Round-the-clock support for hospitals, clinics, and laboratories.</p>
+      </div>
+
+      <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition border-l-4 border-orange-500">
+        <h4 class="text-lg font-bold text-gray-800 mb-3">Wide Range of Equipment</h4>
+        <p class="text-gray-600 text-sm">From diagnostic machines to surgical tools, we cover all healthcare needs.</p>
+      </div>
+
+      <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition border-l-4 border-orange-500">
+        <h4 class="text-lg font-bold text-gray-800 mb-3">Certified Products</h4>
+        <p class="text-gray-600 text-sm">Medical devices meeting international safety and quality standards.</p>
+      </div>
+
+      <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition border-l-4 border-orange-500">
+        <h4 class="text-lg font-bold text-gray-800 mb-3">Expert Consultation</h4>
+        <p class="text-gray-600 text-sm">Professional guidance to choose the right equipment for your facility.</p>
+      </div>
+
+      <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition border-l-4 border-orange-500">
+        <h4 class="text-lg font-bold text-gray-800 mb-3">After Sales Services</h4>
+        <p class="text-gray-600 text-sm">Maintenance and servicing support to ensure long-term reliability.</p>
+      </div>
+
+      <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition border-l-4 border-orange-500">
+        <h4 class="text-lg font-bold text-gray-800 mb-3">Compliance & Safety</h4>
+        <p class="text-gray-600 text-sm">All products comply with local and international healthcare regulations.</p>
+      </div>
+
+      <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition border-l-4 border-orange-500">
+        <h4 class="text-lg font-bold text-gray-800 mb-3">Trusted by Hospitals</h4>
+        <p class="text-gray-600 text-sm">Our equipment is used and recommended by leading healthcare institutions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="bg-gradient-to-r from-gray-900 via-gray-800 to-black text-white py-16 px-4">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+    <div>
+      <img src="img/Untitled-1.jpg" alt="Logo" class="w-32 mb-4 rounded">
+      <p class="text-gray-400 text-sm leading-relaxed">
+        Healix Prime serves the healthcare sector with cutting-edge medical equipment, delivering reliable supply, international standard products, and timely, affordable solutions to improve diagnostic accuracy and patient outcomes.
+      </p>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-bold mb-6">Connect with Us</h3>
+      <ul class="text-gray-400 text-sm space-y-3">
+        <li class="flex items-center gap-2">
+          <i class="fa fa-envelope text-blue-400"></i>
+          info@healixprime.com
+        </li>
+        <li class="flex items-center gap-2">
+          <i class="fa fa-envelope text-blue-400"></i>
+          sales@healixprime.com
+        </li>
+        <li class="flex items-center gap-2">
+          <i class="fa fa-phone text-blue-400"></i>
+          +8801784847377
+        </li>
+        <li class="flex items-center gap-2">
+          <i class="fa fa-location-dot text-blue-400"></i>
           Commercial Cove, 56/C, Road No. 132, Gulshan-1
         </li>
       </ul>
     </div>
 
-    <!-- QUICK LINKS -->
-    <div class="footer-col">
-      <h3>Quick Links</h3>
-      <ul class="footer-links">
-        <li><a href="#">Machinery</a></li>
-        <li><a href="#">Heavy Equipments</a></li>
-        <li><a href="#">Generator</a></li>
-        <li><a href="#">Pumps</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
+    <div>
+      <h3 class="text-lg font-bold mb-6">Quick Links</h3>
+      <ul class="text-gray-400 text-sm space-y-2">
+        <li><a href="index.html" class="hover:text-blue-400 transition">Home</a></li>
+        <li><a href="about.html" class="hover:text-blue-400 transition">About Us</a></li>
+        <li><a href="product.html" class="hover:text-blue-400 transition">Products</a></li>
+        <li><a href="category.html" class="hover:text-blue-400 transition">Product Details</a></li>
+        <li><a href="contact.html" class="hover:text-blue-400 transition">Contact Us</a></li>
       </ul>
     </div>
 
-    <!-- NEWSLETTER -->
-    <div class="footer-col">
-      <h3>Our Newsletter</h3>
-      <p>Signup for our latest news & articles.</p>
-      <div class="footer-newsletter">
-        <input type="email" placeholder="Email Address">
-        <button><i class="fa fa-paper-plane"></i></button>
+    <div>
+      <h3 class="text-lg font-bold mb-6">Our Newsletter</h3>
+      <p class="text-gray-400 text-sm mb-4">Signup for our latest news & articles.</p>
+      <div class="flex border-b border-gray-600">
+        <input type="email" placeholder="Email Address" class="flex-1 bg-transparent text-white text-sm py-2 outline-none placeholder-gray-500">
+        <button class="text-blue-400 hover:text-blue-300 transition">
+          <i class="fa fa-paper-plane"></i>
+        </button>
       </div>
     </div>
-
   </div>
 
-  <!-- BOTTOM -->
-  <div class="footer-bottom">
+  <div class="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
     © Copyright 2026. All rights reserved.
   </div>
 </footer>
-<a href="https://wa.me/8801798444163" target="_blank" class="whatsapp-float">
-    <i class="fab fa-whatsapp"></i>
+
+<!-- ===== WHATSAPP FLOAT BUTTON ===== -->
+<a href="https://wa.me/8801784847377" target="_blank" class="fixed bottom-6 right-6 w-14 h-14 bg-green-500 text-white rounded-full flex items-center justify-center text-2xl hover:bg-green-600 transition z-40 shadow-lg" style="animation: pulse 2s infinite;">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
 <script src="js/script.js"></script>
 </body>
-
 </html>
-

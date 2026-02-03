@@ -1,33 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-   <meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Healix Prime | Home</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-
-</a>
+  <title>Healix Prime | Product by Category</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
-<div class="top-bar">
-  <!-- LEFT -->
-  <div class="top-left">
+<body class="font-serif">
+<!-- ===== TOP BAR ===== -->
+<div class="bg-blue-600 text-white py-2 px-4 md:px-10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs md:text-sm">
+  <div class="text-center md:text-left">
     ISO 9001:2015 Certified
   </div>
-
-  <!-- RIGHT -->
-  <div class="top-right">
-    <span>
+  <div class="flex flex-col md:flex-row gap-4 text-center md:text-right">
+    <span class="flex items-center justify-center md:justify-end gap-2">
       <i class="fa fa-envelope"></i>
-      info@emcpowercore.com
+      info@healixprime.com
     </span>
-
-    <span>
-      <a href="https://www.google.com/maps?q=Commercial+Cove+Gulshan+1+Dhaka"
-         target="_blank">
+    <span class="flex items-center justify-center md:justify-end gap-2">
+      <a href="https://www.google.com/maps?q=Commercial+Cove+Gulshan+1+Dhaka" target="_blank" class="flex items-center gap-2 hover:opacity-80">
         <i class="fa fa-location-dot"></i>
         Commercial Cove, 5/C, Road No. 132, Gulshan-1
       </a>
@@ -35,195 +28,303 @@
   </div>
 </div>
 
+<!-- ===== NAVBAR ===== -->
+<nav class="bg-white shadow-md sticky top-0 z-50 py-4 px-4 md:px-10">
+  <div class="flex justify-between items-center flex-wrap gap-4">
+    <div class="w-32 md:w-40">
+      <img src="img/Healix-Prime-Logo_Print-removebg-preview.png" alt="Healix Prime" class="w-full">
+    </div>
 
+    <button id="menu-toggle" class="md:hidden text-gray-700 text-2xl">
+      <i class="fas fa-bars"></i>
+    </button>
 
-<nav class="navbar">
-  <!-- LEFT LOGO -->
-  <div class="logo">
-    <img src="img/Healix-Prime-Logo_Print-removebg-preview.png" alt="EMC Logo">
-  </div>
+    <ul id="menu" class="hidden md:flex flex-col md:flex-row gap-4 md:gap-6 w-full md:w-auto absolute md:static top-full left-0 right-0 bg-white md:bg-transparent p-4 md:p-0 text-center md:text-left">
+      <li><a href="index.html" class="text-gray-700 hover:text-blue-600 transition">Home</a></li>
+      <li><a href="about.html" class="text-gray-700 hover:text-blue-600 transition">About Us</a></li>
+      <li><a href="product.html" class="text-gray-700 hover:text-blue-600 transition font-bold text-blue-600">Product by Category</a></li>
+      <li><a href="category.html" class="text-gray-700 hover:text-blue-600 transition">Products</a></li>
+      <li><a href="contact.html" class="text-gray-700 hover:text-blue-600 transition">Contact</a></li>
+    </ul>
 
-  <!-- MIDDLE MENU -->
- <ul class="menu">
-    <li><a href="index.html" target="_blank">Home</a></li>
-        <li><a href="about.html"target="_blank">About Us</a></li>
-        <li><a href="product.html"target="_blank">Product by category</a></li>
-        <li><a href="category.html"target="_blank">Products</a></li>
-        <li><a href="contact.html"target="_blank">Contact</a></li>
-  </ul>
-  
-
-  <!-- RIGHT WHATSAPP -->
-  <div class="whatsapp">
-    <a href="https://wa.me/8801784847377" target="_blank">
-      <i class="fab fa-whatsapp"></i> +8801784847377
-    </a>
+    <div class="hidden md:block">
+      <a href="https://wa.me/8801784847377" target="_blank" class="flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition">
+        <i class="fab fa-whatsapp"></i>
+        <span class="hidden lg:inline">+8801784847377</span>
+      </a>
+    </div>
   </div>
 </nav>
-<section class="product-category">
-  <h2>Product by Category</h2>
-  <p class="sub-text">Advanced medical categories launching soon</p>
 
-  <div class="category-grid">
-
-    <div class="category-card">
-  <div class="icon">🩻</div>
-  <h3>Radiogram</h3>
-
-  <ul class="features">
-    <li>High-quality medical equipment</li>
-    <li>International safety standards</li>
-    <li>Reliable performance & accuracy</li>
-    <li>After-sales service & support</li>
-  </ul>
-</div>
-
-
-    <div class="category-card">
-      <div class="icon">🫀</div>
-      <h3>Orthology</h3>
-      <ul class="features">
-  <li>Advanced diagnostic equipment</li>
-  <li>Designed for clinical accuracy</li>
-  <li>Durable & long-lasting systems</li>
-  <li>Reliable after-sales support</li>
-</ul>
-
+<!-- ===== PRODUCT CATEGORY SECTION ===== -->
+<section class="py-16 md:py-24 px-4 bg-blue-50">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">Product by Category</h2>
+      <p class="text-gray-600">Advanced medical categories launching soon</p>
     </div>
 
-    <div class="category-card">
-      <div class="icon">🧠</div>
-      <h3>Neurology</h3>
-      <ul class="features">
-  <li>Precision neurological devices</li>
-  <li>Support for advanced diagnostics</li>
-  <li>Consistent & reliable results</li>
-  <li>Compliant with safety standards</li>
-</ul>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Radiogram -->
+      <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl hover:-translate-y-2 transition">
+        <div class="text-5xl mb-4">🩻</div>
+        <h3 class="text-xl font-bold text-orange-500 mb-4">Radiogram</h3>
+        <ul class="text-gray-600 text-sm space-y-2 mb-6 text-left">
+          <li class="flex items-start gap-2">
+            <span class="text-orange-500 mt-1">•</span>
+            <span>High-quality medical equipment</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-orange-500 mt-1">•</span>
+            <span>International safety standards</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-orange-500 mt-1">•</span>
+            <span>Reliable performance & accuracy</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-orange-500 mt-1">•</span>
+            <span>After-sales service & support</span>
+          </li>
+        </ul>
+      </div>
 
-    </div>
+      <!-- Orthology -->
+      <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl hover:-translate-y-2 transition">
+        <div class="text-5xl mb-4">🫀</div>
+        <h3 class="text-xl font-bold text-orange-500 mb-4">Orthology</h3>
+        <ul class="text-gray-600 text-sm space-y-2 mb-6 text-left">
+          <li class="flex items-start gap-2">
+            <span class="text-orange-500 mt-1">•</span>
+            <span>Advanced diagnostic equipment</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-orange-500 mt-1">•</span>
+            <span>Designed for clinical accuracy</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-orange-500 mt-1">•</span>
+            <span>Durable & long-lasting systems</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-orange-500 mt-1">•</span>
+            <span>Reliable after-sales support</span>
+          </li>
+        </ul>
+      </div>
 
-    <div class="category-card">
-      <div class="icon">🦴</div>
-      <h3>Orthopedics</h3>
-     <ul class="features">
-  <li>Orthopedic diagnostic solutions</li>
-  <li>High durability medical equipment</li>
-  <li>Accurate & stable performance</li>
-  <li>Clinical-grade quality assurance</li>
-</ul>
+      <!-- Neurology -->
+      <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl hover:-translate-y-2 transition">
+        <div class="text-5xl mb-4">🧠</div>
+        <h3 class="text-xl font-bold text-orange-500 mb-4">Neurology</h3>
+        <ul class="text-gray-600 text-sm space-y-2 mb-6 text-left">
+          <li class="flex items-start gap-2">
+            <span class="text-orange-500 mt-1">•</span>
+            <span>Precision neurological devices</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-orange-500 mt-1">•</span>
+            <span>Support for advanced diagnostics</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-orange-500 mt-1">•</span>
+            <span>Consistent & reliable results</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-orange-500 mt-1">•</span>
+            <span>Compliant with safety standards</span>
+          </li>
+        </ul>
+      </div>
 
-    </div>
-    <div class="category-card">
-      <div class="icon">🩺</div>
-      <h3>Cardiology</h3>
-     <ul class="features">
-  <li>Advanced cardiac diagnostic tools</li>
-  <li>High precision monitoring systems</li>
-  <li>Trusted clinical performance</li>
-  <li>Designed for hospital use</li>
-</ul>
+      <!-- Orthopedics -->
+      <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl hover:-translate-y-2 transition">
+        <div class="text-5xl mb-4">🦴</div>
+        <h3 class="text-xl font-bold text-orange-500 mb-4">Orthopedics</h3>
+        <ul class="text-gray-600 text-sm space-y-2 mb-6 text-left">
+          <li class="flex items-start gap-2">
+            <span class="text-orange-500 mt-1">•</span>
+            <span>Orthopedic diagnostic solutions</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-orange-500 mt-1">•</span>
+            <span>High durability medical equipment</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-orange-500 mt-1">•</span>
+            <span>Accurate & stable performance</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-orange-500 mt-1">•</span>
+            <span>Clinical-grade quality assurance</span>
+          </li>
+        </ul>
+      </div>
 
-    </div>
+      <!-- Cardiology -->
+      <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl hover:-translate-y-2 transition">
+        <div class="text-5xl mb-4">❤️</div>
+        <h3 class="text-xl font-bold text-orange-500 mb-4">Cardiology</h3>
+        <ul class="text-gray-600 text-sm space-y-2 mb-6 text-left">
+          <li class="flex items-start gap-2">
+            <span class="text-orange-500 mt-1">•</span>
+            <span>Advanced cardiac diagnostic tools</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-orange-500 mt-1">•</span>
+            <span>High precision monitoring systems</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-orange-500 mt-1">•</span>
+            <span>Trusted clinical performance</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-orange-500 mt-1">•</span>
+            <span>Designed for hospital use</span>
+          </li>
+        </ul>
+      </div>
 
-    <div class="category-card">
-      <div class="icon">🧪</div>
-      <h3>Pathology</h3>
-      <ul class="features">
-  <li>Laboratory diagnostic equipment</li>
-  <li>Consistent and accurate testing</li>
-  <li>Efficient workflow solutions</li>
-  <li>Reliable laboratory performance</li>
-</ul>
+      <!-- Pathology -->
+      <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl hover:-translate-y-2 transition">
+        <div class="text-5xl mb-4">🧪</div>
+        <h3 class="text-xl font-bold text-orange-500 mb-4">Pathology</h3>
+        <ul class="text-gray-600 text-sm space-y-2 mb-6 text-left">
+          <li class="flex items-start gap-2">
+            <span class="text-orange-500 mt-1">•</span>
+            <span>Laboratory diagnostic equipment</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-orange-500 mt-1">•</span>
+            <span>Consistent and accurate testing</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-orange-500 mt-1">•</span>
+            <span>Efficient workflow solutions</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-orange-500 mt-1">•</span>
+            <span>Reliable laboratory performance</span>
+          </li>
+        </ul>
+      </div>
 
-    </div>
+      <!-- Pulmonology -->
+      <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl hover:-translate-y-2 transition">
+        <div class="text-5xl mb-4">🫁</div>
+        <h3 class="text-xl font-bold text-orange-500 mb-4">Pulmonology</h3>
+        <ul class="text-gray-600 text-sm space-y-2 mb-6 text-left">
+          <li class="flex items-start gap-2">
+            <span class="text-orange-500 mt-1">•</span>
+            <span>Respiratory diagnostic solutions</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-orange-500 mt-1">•</span>
+            <span>Accurate lung function testing</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-orange-500 mt-1">•</span>
+            <span>Patient-friendly device design</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-orange-500 mt-1">•</span>
+            <span>Compliance with safety standards</span>
+          </li>
+        </ul>
+      </div>
 
-    <div class="category-card">
-      <div class="icon">🫁</div>
-      <h3>Pulmonology</h3>
-     <ul class="features">
-  <li>Respiratory diagnostic solutions</li>
-  <li>Accurate lung function testing</li>
-  <li>Patient-friendly device design</li>
-  <li>Compliance with safety standards</li>
-</ul>
-
-    </div>
-
-    <div class="category-card">
-      <div class="icon">🧬</div>
-      <h3>Laboratory</h3>
-     <ul class="features">
-  <li>Modern laboratory equipment</li>
-  <li>High accuracy & repeatability</li>
-  <li>Supports routine diagnostics</li>
-  <li>Trusted service & maintenance</li>
-</ul>
-
+      <!-- Laboratory -->
+      <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl hover:-translate-y-2 transition">
+        <div class="text-5xl mb-4">🧬</div>
+        <h3 class="text-xl font-bold text-orange-500 mb-4">Laboratory</h3>
+        <ul class="text-gray-600 text-sm space-y-2 mb-6 text-left">
+          <li class="flex items-start gap-2">
+            <span class="text-orange-500 mt-1">•</span>
+            <span>Modern laboratory equipment</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-orange-500 mt-1">•</span>
+            <span>High accuracy & repeatability</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-orange-500 mt-1">•</span>
+            <span>Supports routine diagnostics</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-orange-500 mt-1">•</span>
+            <span>Trusted service & maintenance</span>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
-  <footer class="main-footer">
-  <div class="footer-container">
 
-    <!-- ABOUT -->
-    <div class="footer-col">
-      <img src="img/Untitled-1.jpg" class="footer-logo" alt="Logo">
-      <p>
-       Healix Prime serves the healthcare sector with cutting-edge medical equipment,
-        delivering reliable supply, international standard products, and timely, affordable solutions to improve diagnostic accuracy and patient outcomes.
+<!-- ===== FOOTER ===== -->
+<footer class="bg-gradient-to-r from-gray-900 via-gray-800 to-black text-white py-16 px-4">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+    <div>
+      <img src="img/Untitled-1.jpg" alt="Logo" class="w-32 mb-4 rounded">
+      <p class="text-gray-400 text-sm leading-relaxed">
+        Healix Prime serves the healthcare sector with cutting-edge medical equipment, delivering reliable supply, international standard products, and timely, affordable solutions to improve diagnostic accuracy and patient outcomes.
       </p>
     </div>
 
-    <!-- CONNECT -->
-    <div class="footer-col">
-      <h3>Connect with Us</h3>
-      <ul class="footer-contact">
-        <li><i class="fa fa-envelope"></i> info@healixprime.com</li>
-        <li><i class="fa fa-envelope"></i> sales@healixprime.com</li>
-        <li><i class="fa fa-phone"></i> +8801784847377</li>
-        <li>
-          <i class="fa fa-location-dot"></i>
+    <div>
+      <h3 class="text-lg font-bold mb-6">Connect with Us</h3>
+      <ul class="text-gray-400 text-sm space-y-3">
+        <li class="flex items-center gap-2">
+          <i class="fa fa-envelope text-blue-400"></i>
+          info@healixprime.com
+        </li>
+        <li class="flex items-center gap-2">
+          <i class="fa fa-envelope text-blue-400"></i>
+          sales@healixprime.com
+        </li>
+        <li class="flex items-center gap-2">
+          <i class="fa fa-phone text-blue-400"></i>
+          +8801784847377
+        </li>
+        <li class="flex items-center gap-2">
+          <i class="fa fa-location-dot text-blue-400"></i>
           Commercial Cove, 56/C, Road No. 132, Gulshan-1
         </li>
       </ul>
     </div>
 
-    <!-- QUICK LINKS -->
-    <div class="footer-col">
-      <h3>Quick Links</h3>
-      <ul class="footer-links">
-        <li><a href="#">Machinery</a></li>
-        <li><a href="#">Heavy Equipments</a></li>
-        <li><a href="#">Generator</a></li>
-        <li><a href="#">Pumps</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
+    <div>
+      <h3 class="text-lg font-bold mb-6">Quick Links</h3>
+      <ul class="text-gray-400 text-sm space-y-2">
+        <li><a href="index.html" class="hover:text-blue-400 transition">Home</a></li>
+        <li><a href="about.html" class="hover:text-blue-400 transition">About Us</a></li>
+        <li><a href="product.html" class="hover:text-blue-400 transition">Products</a></li>
+        <li><a href="category.html" class="hover:text-blue-400 transition">Product Details</a></li>
+        <li><a href="contact.html" class="hover:text-blue-400 transition">Contact Us</a></li>
       </ul>
     </div>
 
-    <!-- NEWSLETTER -->
-    <div class="footer-col">
-      <h3>Our Newsletter</h3>
-      <p>Signup for our latest news & articles.</p>
-      <div class="footer-newsletter">
-        <input type="email" placeholder="Email Address">
-        <button><i class="fa fa-paper-plane"></i></button>
+    <div>
+      <h3 class="text-lg font-bold mb-6">Our Newsletter</h3>
+      <p class="text-gray-400 text-sm mb-4">Signup for our latest news & articles.</p>
+      <div class="flex border-b border-gray-600">
+        <input type="email" placeholder="Email Address" class="flex-1 bg-transparent text-white text-sm py-2 outline-none placeholder-gray-500">
+        <button class="text-blue-400 hover:text-blue-300 transition">
+          <i class="fa fa-paper-plane"></i>
+        </button>
       </div>
     </div>
-
   </div>
 
-  <!-- BOTTOM -->
-  <div class="footer-bottom">
+  <div class="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
     © Copyright 2026. All rights reserved.
   </div>
 </footer>
 
+<!-- ===== WHATSAPP FLOAT BUTTON ===== -->
+<a href="https://wa.me/8801784847377" target="_blank" class="fixed bottom-6 right-6 w-14 h-14 bg-green-500 text-white rounded-full flex items-center justify-center text-2xl hover:bg-green-600 transition z-40 shadow-lg" style="animation: pulse 2s infinite;">
+  <i class="fab fa-whatsapp"></i>
+</a>
 
 <script src="js/script.js"></script>
-<a href="https://wa.me/8801798444163" target="_blank" class="whatsapp-float">
-    <i class="fab fa-whatsapp"></i>
 </body>
-
 </html>

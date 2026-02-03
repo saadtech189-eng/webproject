@@ -1,31 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Healix Prime | Home</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-
-</a>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healix Prime | Our Products</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
-<div class="top-bar">
-  <!-- LEFT -->
-  <div class="top-left">
+<body class="font-serif">
+<!-- ===== TOP BAR ===== -->
+<div class="bg-blue-600 text-white py-2 px-4 md:px-10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs md:text-sm">
+  <div class="text-center md:text-left">
     ISO 9001:2015 Certified
   </div>
-
-  <!-- RIGHT -->
-  <div class="top-right">
-    <span>
+  <div class="flex flex-col md:flex-row gap-4 text-center md:text-right">
+    <span class="flex items-center justify-center md:justify-end gap-2">
       <i class="fa fa-envelope"></i>
-      info@emcpowercore.com
+      info@healixprime.com
     </span>
-
-    <span>
-      <a href="https://www.google.com/maps?q=Commercial+Cove+Gulshan+1+Dhaka"
-         target="_blank">
+    <span class="flex items-center justify-center md:justify-end gap-2">
+      <a href="https://www.google.com/maps?q=Commercial+Cove+Gulshan+1+Dhaka" target="_blank" class="flex items-center gap-2 hover:opacity-80">
         <i class="fa fa-location-dot"></i>
         Commercial Cove, 5/C, Road No. 132, Gulshan-1
       </a>
@@ -33,247 +28,359 @@
   </div>
 </div>
 
+<!-- ===== NAVBAR ===== -->
+<nav class="bg-white shadow-md sticky top-0 z-50 py-4 px-4 md:px-10">
+  <div class="flex justify-between items-center flex-wrap gap-4">
+    <div class="w-32 md:w-40">
+      <img src="img/Healix-Prime-Logo_Print-removebg-preview.png" alt="Healix Prime" class="w-full">
+    </div>
 
+    <button id="menu-toggle" class="md:hidden text-gray-700 text-2xl">
+      <i class="fas fa-bars"></i>
+    </button>
 
-<nav class="navbar">
-  <!-- LEFT LOGO -->
-  <div class="logo">
-    <img src="img/Healix-Prime-Logo_Print-removebg-preview.png" alt="EMC Logo">
-  </div>
+    <ul id="menu" class="hidden md:flex flex-col md:flex-row gap-4 md:gap-6 w-full md:w-auto absolute md:static top-full left-0 right-0 bg-white md:bg-transparent p-4 md:p-0 text-center md:text-left">
+      <li><a href="index.html" class="text-gray-700 hover:text-blue-600 transition">Home</a></li>
+      <li><a href="about.html" class="text-gray-700 hover:text-blue-600 transition">About Us</a></li>
+      <li><a href="product.html" class="text-gray-700 hover:text-blue-600 transition">Product by Category</a></li>
+      <li><a href="category.html" class="text-gray-700 hover:text-blue-600 transition font-bold text-blue-600">Products</a></li>
+      <li><a href="contact.html" class="text-gray-700 hover:text-blue-600 transition">Contact</a></li>
+    </ul>
 
-  <!-- MIDDLE MENU -->
-  <ul class="menu">
-    <li><a href="index.html" target="_blank">Home</a></li>
-        <li><a href="about.html"target="_blank">About Us</a></li>
-        <li><a href="product.html"target="_blank">Product by category</a></li>
-        <li><a href="category.html"target="_blank">Products</a></li>
-        <li><a href="contact.html"target="_blank">Contact</a></li>
-  </ul>
-
-  <!-- RIGHT WHATSAPP -->
-  <div class="whatsapp">
-    <a href="https://wa.me/8801784847377" target="_blank">
-      <i class="fab fa-whatsapp"></i> +8801784847377
-    </a>
+    <div class="hidden md:block">
+      <a href="https://wa.me/8801784847377" target="_blank" class="flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition">
+        <i class="fab fa-whatsapp"></i>
+        <span class="hidden lg:inline">+8801784847377</span>
+      </a>
+    </div>
   </div>
 </nav>
-<section class="product-page">
-  <h2>Our Medical Products</h2>
-  <p class="sub-text">Reliable and certified medical equipment for professional healthcare use</p>
 
-  <!-- Product 1 -->
-  <div class="product-box">
-    <div class="product-img">
-      <img src="img/BP.jpg" alt="BP Machine">
+<!-- ===== PRODUCTS PAGE ===== -->
+<section class="py-16 md:py-24 px-4 bg-blue-50">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">Our Medical Products</h2>
+      <p class="text-gray-600">Reliable and certified medical equipment for professional healthcare use</p>
     </div>
 
-    <div class="product-content">
-      <h3>BP Machine</h3>
-      <span class="category">Category: Diagnostic Equipment</span>
+    <div class="space-y-8">
+      <!-- Product 1 -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
+          <div class="md:col-span-1">
+            <img src="img/bp.jpg" alt="BP Machine" class="w-full h-48 object-cover rounded-lg">
+          </div>
+          <div class="md:col-span-2">
+            <h3 class="text-2xl font-bold text-orange-500 mb-2">BP Machine</h3>
+            <p class="text-gray-500 text-sm mb-4">Category: <span class="font-semibold text-gray-700">Diagnostic Equipment</span></p>
+            <ul class="space-y-2 text-gray-600 text-sm">
+              <li class="flex items-center gap-2">
+                <span class="text-orange-500">•</span>
+                Accurate blood pressure measurement
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-orange-500">•</span>
+                Easy-to-read digital display
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-orange-500">•</span>
+                Compact and portable design
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-orange-500">•</span>
+                Suitable for clinic & home use
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-      <ul>
-        <li>Accurate blood pressure measurement</li>
-        <li>Easy-to-read digital display</li>
-        <li>Compact and portable design</li>
-        <li>Suitable for clinic & home use</li>
-      </ul>
-    </div>
-  </div>
+      <!-- Product 2 -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
+          <div class="md:col-span-1">
+            <img src="img/ECG.png" alt="ECG Machine" class="w-full h-48 object-cover rounded-lg">
+          </div>
+          <div class="md:col-span-2">
+            <h3 class="text-2xl font-bold text-orange-500 mb-2">ECG Machine</h3>
+            <p class="text-gray-500 text-sm mb-4">Category: <span class="font-semibold text-gray-700">Cardiology</span></p>
+            <ul class="space-y-2 text-gray-600 text-sm">
+              <li class="flex items-center gap-2">
+                <span class="text-orange-500">•</span>
+                High precision cardiac monitoring
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-orange-500">•</span>
+                Clear waveform visualization
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-orange-500">•</span>
+                Reliable clinical performance
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-orange-500">•</span>
+                Hospital-grade quality
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-  <!-- Product 2 -->
-  <div class="product-box">
-    <div class="product-img">
-      <img src="img/ECG.png" alt="ECG Machine">
-    </div>
+      <!-- Product 3 -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
+          <div class="md:col-span-1">
+            <img src="img/oxygen concentrator.jpg" alt="Oxygen Concentrator" class="w-full h-48 object-cover rounded-lg">
+          </div>
+          <div class="md:col-span-2">
+            <h3 class="text-2xl font-bold text-orange-500 mb-2">Oxygen Concentrator</h3>
+            <p class="text-gray-500 text-sm mb-4">Category: <span class="font-semibold text-gray-700">Respiratory Care</span></p>
+            <ul class="space-y-2 text-gray-600 text-sm">
+              <li class="flex items-center gap-2">
+                <span class="text-orange-500">•</span>
+                Continuous oxygen supply system
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-orange-500">•</span>
+                Low noise & energy efficient
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-orange-500">•</span>
+                User-friendly operation
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-orange-500">•</span>
+                Designed for long-term use
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-    <div class="product-content">
-      <h3>ECG Machine</h3>
-      <span class="category">Category: Cardiology</span>
+      <!-- Product 4 -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
+          <div class="md:col-span-1">
+            <img src="img/nebulizer.jpg" alt="Nebulizer" class="w-full h-48 object-cover rounded-lg">
+          </div>
+          <div class="md:col-span-2">
+            <h3 class="text-2xl font-bold text-orange-500 mb-2">Nebulizer</h3>
+            <p class="text-gray-500 text-sm mb-4">Category: <span class="font-semibold text-gray-700">Pulmonology</span></p>
+            <ul class="space-y-2 text-gray-600 text-sm">
+              <li class="flex items-center gap-2">
+                <span class="text-orange-500">•</span>
+                Efficient medication delivery
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-orange-500">•</span>
+                Compact and lightweight design
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-orange-500">•</span>
+                Safe for adult & pediatric use
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-orange-500">•</span>
+                Low maintenance system
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-      <ul>
-        <li>High precision cardiac monitoring</li>
-        <li>Clear waveform visualization</li>
-        <li>Reliable clinical performance</li>
-        <li>Hospital-grade quality</li>
-      </ul>
-    </div>
-  </div>
+      <!-- Product 5 -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
+          <div class="md:col-span-1">
+            <img src="img/Patient Monitor.jpeg" alt="Patient Monitor" class="w-full h-48 object-cover rounded-lg">
+          </div>
+          <div class="md:col-span-2">
+            <h3 class="text-2xl font-bold text-orange-500 mb-2">Patient Monitor</h3>
+            <p class="text-gray-500 text-sm mb-4">Category: <span class="font-semibold text-gray-700">Critical Care</span></p>
+            <ul class="space-y-2 text-gray-600 text-sm">
+              <li class="flex items-center gap-2">
+                <span class="text-orange-500">•</span>
+                Real-time vital sign monitoring
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-orange-500">•</span>
+                High-resolution display panel
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-orange-500">•</span>
+                Accurate and stable readings
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-orange-500">•</span>
+                Suitable for ICU environments
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-  <!-- Product 3 -->
-  <div class="product-box">
-    <div class="product-img">
-      <img src="img/oxygen concentrator.jpg" alt="Oxygen Concentrator">
-    </div>
+      <!-- Product 6 -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
+          <div class="md:col-span-1">
+            <img src="img/Infusion Pump.jpeg" alt="Infusion Pump" class="w-full h-48 object-cover rounded-lg">
+          </div>
+          <div class="md:col-span-2">
+            <h3 class="text-2xl font-bold text-orange-500 mb-2">Infusion Pump</h3>
+            <p class="text-gray-500 text-sm mb-4">Category: <span class="font-semibold text-gray-700">Hospital Equipment</span></p>
+            <ul class="space-y-2 text-gray-600 text-sm">
+              <li class="flex items-center gap-2">
+                <span class="text-orange-500">•</span>
+                Precise fluid delivery control
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-orange-500">•</span>
+                Safe and reliable operation
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-orange-500">•</span>
+                Alarm system for safety
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-orange-500">•</span>
+                Designed for clinical use
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-    <div class="product-content">
-      <h3>Oxygen Concentrator</h3>
-      <span class="category">Category: Respiratory Care</span>
+      <!-- Product 7 -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
+          <div class="md:col-span-1">
+            <img src="img/Defibrillator.jpeg" alt="Defibrillator" class="w-full h-48 object-cover rounded-lg">
+          </div>
+          <div class="md:col-span-2">
+            <h3 class="text-2xl font-bold text-orange-500 mb-2">Defibrillator</h3>
+            <p class="text-gray-500 text-sm mb-4">Category: <span class="font-semibold text-gray-700">Emergency Care</span></p>
+            <ul class="space-y-2 text-gray-600 text-sm">
+              <li class="flex items-center gap-2">
+                <span class="text-orange-500">•</span>
+                Rapid response cardiac support
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-orange-500">•</span>
+                Easy operation during emergencies
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-orange-500">•</span>
+                Reliable shock delivery
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-orange-500">•</span>
+                Portable and durable design
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-      <ul>
-        <li>Continuous oxygen supply system</li>
-        <li>Low noise & energy efficient</li>
-        <li>User-friendly operation</li>
-        <li>Designed for long-term use</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Product 4 -->
-  <div class="product-box">
-    <div class="product-img">
-      <img src="img/nebulizer.jpg" alt="Nebulizer">
-    </div>
-
-    <div class="product-content">
-      <h3>Nebulizer</h3>
-      <span class="category">Category: Pulmonology</span>
-
-      <ul>
-        <li>Efficient medication delivery</li>
-        <li>Compact and lightweight design</li>
-        <li>Safe for adult & pediatric use</li>
-        <li>Low maintenance system</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Product 5 -->
-  <div class="product-box">
-    <div class="product-img">
-      <img src="img/Patient Monitor.jpeg" alt="Patient Monitor">
-    </div>
-
-    <div class="product-content">
-      <h3>Patient Monitor</h3>
-      <span class="category">Category: Critical Care</span>
-
-      <ul>
-        <li>Real-time vital sign monitoring</li>
-        <li>High-resolution display panel</li>
-        <li>Accurate and stable readings</li>
-        <li>Suitable for ICU environments</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Product 6 -->
-  <div class="product-box">
-    <div class="product-img">
-      <img src="img/Infusion Pump.jpeg" alt="Infusion Pump">
-    </div>
-
-    <div class="product-content">
-      <h3>Infusion Pump</h3>
-      <span class="category">Category: Hospital Equipment</span>
-
-      <ul>
-        <li>Precise fluid delivery control</li>
-        <li>Safe and reliable operation</li>
-        <li>Alarm system for safety</li>
-        <li>Designed for clinical use</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Product 7 -->
-  <div class="product-box">
-    <div class="product-img">
-      <img src="img/Defibrillator.jpeg" alt="Defibrillator">
-    </div>
-
-    <div class="product-content">
-      <h3>Defibrillator</h3>
-      <span class="category">Category: Emergency Care</span>
-
-      <ul>
-        <li>Rapid response cardiac support</li>
-        <li>Easy operation during emergencies</li>
-        <li>Reliable shock delivery</li>
-        <li>Portable and durable design</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Product 8 -->
-  <div class="product-box">
-    <div class="product-img">
-      <img src="img/Suction Machine.png" alt="Suction Machine">
-    </div>
-
-    <div class="product-content">
-      <h3>Suction Machine</h3>
-      <span class="category">Category: Surgical Equipment</span>
-
-      <ul>
-        <li>Efficient fluid suction system</li>
-        <li>Strong and stable performance</li>
-        <li>Low noise operation</li>
-        <li>Easy cleaning and maintenance</li>
-      </ul>
+      <!-- Product 8 -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
+          <div class="md:col-span-1">
+            <img src="img/Suction Machine.png" alt="Suction Machine" class="w-full h-48 object-cover rounded-lg">
+          </div>
+          <div class="md:col-span-2">
+            <h3 class="text-2xl font-bold text-orange-500 mb-2">Suction Machine</h3>
+            <p class="text-gray-500 text-sm mb-4">Category: <span class="font-semibold text-gray-700">Surgical Equipment</span></p>
+            <ul class="space-y-2 text-gray-600 text-sm">
+              <li class="flex items-center gap-2">
+                <span class="text-orange-500">•</span>
+                Efficient fluid suction system
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-orange-500">•</span>
+                Strong and stable performance
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-orange-500">•</span>
+                Low noise operation
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-orange-500">•</span>
+                Easy cleaning and maintenance
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-  <footer class="main-footer">
-  <div class="footer-container">
 
-    <!-- ABOUT -->
-    <div class="footer-col">
-      <img src="img/Untitled-1.jpg" class="footer-logo" alt="Logo">
-      <p>
-       Healix Prime serves the healthcare sector with cutting-edge medical equipment,
-        delivering reliable supply, international standard products, and timely, affordable solutions to improve diagnostic accuracy and patient outcomes.
+<!-- ===== FOOTER ===== -->
+<footer class="bg-gradient-to-r from-gray-900 via-gray-800 to-black text-white py-16 px-4">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+    <div>
+      <img src="img/Untitled-1.jpg" alt="Logo" class="w-32 mb-4 rounded">
+      <p class="text-gray-400 text-sm leading-relaxed">
+        Healix Prime serves the healthcare sector with cutting-edge medical equipment, delivering reliable supply, international standard products, and timely, affordable solutions to improve diagnostic accuracy and patient outcomes.
       </p>
     </div>
 
-    <!-- CONNECT -->
-    <div class="footer-col">
-      <h3>Connect with Us</h3>
-      <ul class="footer-contact">
-        <li><i class="fa fa-envelope"></i> info@healixprime.com</li>
-        <li><i class="fa fa-envelope"></i> sales@healixprime.com</li>
-        <li><i class="fa fa-phone"></i> +8801784847377</li>
-        <li>
-          <i class="fa fa-location-dot"></i>
+    <div>
+      <h3 class="text-lg font-bold mb-6">Connect with Us</h3>
+      <ul class="text-gray-400 text-sm space-y-3">
+        <li class="flex items-center gap-2">
+          <i class="fa fa-envelope text-blue-400"></i>
+          info@healixprime.com
+        </li>
+        <li class="flex items-center gap-2">
+          <i class="fa fa-envelope text-blue-400"></i>
+          sales@healixprime.com
+        </li>
+        <li class="flex items-center gap-2">
+          <i class="fa fa-phone text-blue-400"></i>
+          +8801784847377
+        </li>
+        <li class="flex items-center gap-2">
+          <i class="fa fa-location-dot text-blue-400"></i>
           Commercial Cove, 56/C, Road No. 132, Gulshan-1
         </li>
       </ul>
     </div>
 
-    <!-- QUICK LINKS -->
-    <div class="footer-col">
-      <h3>Quick Links</h3>
-      <ul class="footer-links">
-        <li><a href="#">Machinery</a></li>
-        <li><a href="#">Heavy Equipments</a></li>
-        <li><a href="#">Generator</a></li>
-        <li><a href="#">Pumps</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
+    <div>
+      <h3 class="text-lg font-bold mb-6">Quick Links</h3>
+      <ul class="text-gray-400 text-sm space-y-2">
+        <li><a href="index.html" class="hover:text-blue-400 transition">Home</a></li>
+        <li><a href="about.html" class="hover:text-blue-400 transition">About Us</a></li>
+        <li><a href="product.html" class="hover:text-blue-400 transition">Products</a></li>
+        <li><a href="category.html" class="hover:text-blue-400 transition">Product Details</a></li>
+        <li><a href="contact.html" class="hover:text-blue-400 transition">Contact Us</a></li>
       </ul>
     </div>
 
-    <!-- NEWSLETTER -->
-    <div class="footer-col">
-      <h3>Our Newsletter</h3>
-      <p>Signup for our latest news & articles.</p>
-      <div class="footer-newsletter">
-        <input type="email" placeholder="Email Address">
-        <button><i class="fa fa-paper-plane"></i></button>
+    <div>
+      <h3 class="text-lg font-bold mb-6">Our Newsletter</h3>
+      <p class="text-gray-400 text-sm mb-4">Signup for our latest news & articles.</p>
+      <div class="flex border-b border-gray-600">
+        <input type="email" placeholder="Email Address" class="flex-1 bg-transparent text-white text-sm py-2 outline-none placeholder-gray-500">
+        <button class="text-blue-400 hover:text-blue-300 transition">
+          <i class="fa fa-paper-plane"></i>
+        </button>
       </div>
     </div>
-
   </div>
 
-  <!-- BOTTOM -->
-  <div class="footer-bottom">
+  <div class="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
     © Copyright 2026. All rights reserved.
   </div>
 </footer>
 
+<!-- ===== WHATSAPP FLOAT BUTTON ===== -->
+<a href="https://wa.me/8801784847377" target="_blank" class="fixed bottom-6 right-6 w-14 h-14 bg-green-500 text-white rounded-full flex items-center justify-center text-2xl hover:bg-green-600 transition z-40 shadow-lg" style="animation: pulse 2s infinite;">
+  <i class="fab fa-whatsapp"></i>
+</a>
 
 <script src="js/script.js"></script>
-<a href="https://wa.me/8801798444163" target="_blank" class="whatsapp-float">
-    <i class="fab fa-whatsapp"></i>
 </body>
-
 </html>
